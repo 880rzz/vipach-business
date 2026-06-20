@@ -112,3 +112,76 @@
     });
   });
 })();
+
+/* ============================================================
+   FINOM MOZGÁSRÉTEG (Apple-szerű) — progresszív ráépülés.
+   JS nélkül az oldal teljesen működik és minden látható.
+   ============================================================ */
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;  // mozgáscsökkentésnél nem aktiválunk semmit
+
+  var root = document.documentElement;
+  root.classList.add('js-anim');  // ez kapcsolja be a CSS-ben a kiindulási állapotot
+
+  // Reveal-jelöltek: tartalmi blokkok, amik a nézetbe úsznak
+  var selectors = [
+    '.section-head',
+    '.deliverable',
+    '.text-panel', '.black-panel',
+    '.panel',
+    '.step',
+    '.quote p',
+    '.form-wrap'
+  ];
+  var nodes = [];
+  selectors.forEach(function(sel){
+    document.querySelectorAll(sel).forEach(function(el){
+      // a hero-n belüli elemeket kihagyjuk (azokat a hero-belépő kezeli)
+      if (el.closest('.hero-content')) return;
+      el.classList.add('reveal');
+      nodes.push(el);
+    });
+  });
+
+  // Lépcsőzött késleltetés a közös szülőn belül (kártya-rácsok)
+  function applyStagger(){
+    var groups = {};
+    nodes.forEach(function(el){
+      var parent = el.parentElement;
+      var key = parent ? (parent.className || 'x') : 'x';
+      (groups[key] = groups[key] || []).push(el);
+    });
+    Object.keys(groups).forEach(function(k){
+      groups[k].forEach(function(el, i){
+        el.style.transitionDelay = Math.min(i * 70, 280) + 'ms';
+      });
+    });
+  }
+  applyStagger();
+
+  if (!('IntersectionObserver' in window)){
+    // régi böngésző: egyszerűen mutassunk meg mindent
+    nodes.forEach(function(el){ el.classList.add('is-visible'); });
+    return;
+  }
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+  nodes.forEach(function(el){ io.observe(el); });
+
+  // Biztonsági háló: ha valami a hajtás fölött van, azonnal látszódjon
+  requestAnimationFrame(function(){
+    nodes.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.92) el.classList.add('is-visible');
+    });
+  });
+})();
