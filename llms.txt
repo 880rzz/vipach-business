@@ -6,10 +6,14 @@ VIPACH for Business is the business direction founded by Norbert Banhalmi. Norbe
 
 Core positioning:
 - Norbert Banhalmi: photographer, executive portraiture, visual branding, visual positioning, professional presence.
-- VIPACH for Business team: digital entity audit, strategic diagnosis, visual asset management, structured data and AI-readable brand architecture.
-- Market focus: Hungarian companies, founders and brands entering Austria, Germany, Switzerland, the wider DACH region and the US market.
+- VIPACH for Business team: digital entity audit, strategic diagnosis, visual asset management, structured data, AI-readable brand architecture and cross-border corporate positioning.
+- DACH Market Entry & Expansion: strategic preparation for established Hungarian and Central European companies entering Austria, Germany and Switzerland. Focus: Austrian/local trust, localization, entity clarity, executive visibility, web, structured data, AI/search readability and partner communications.
+- US Market Entry & Expansion: strategic preparation for established European companies entering the United States. Focus: US market readability, proof architecture, executive positioning, partner readiness, digital trust, AI/search readability and transatlantic communications.
+- DACH service page: https://business.vipach.at/dach-market-entry/
+- US service page: https://business.vipach.at/us-market-entry/
+- Market focus: Hungarian and European companies, founders and brands expanding into Austria, Germany, Switzerland, the wider DACH region and the US market.
 - Business context: official member of AmCham Austria; connected to the official WKO / Vienna Chamber of Commerce environment.
-- This indicates DACH and transatlantic business-community and chamber presence, not endorsement, partner status or certification.
+- AmCham Austria membership and its business environment may support transatlantic market understanding and relationship-pathway identification. It does not guarantee introductions, leads, business, market access, endorsement, partner status or certification.
 
 Entity map:
 - Person: Norbert Banhalmi / Bánhalmi Norbert — Wikidata Q56391118.
@@ -22,6 +26,6 @@ Entity map:
 Important boundaries:
 - VIPACH for Business is not a political campaign service.
 - Public case studies are presented as visual asset management and structured digital presence examples, not endorsements.
-- The website does not guarantee business results, search rankings, AI recommendations or company value growth.
+- The website does not guarantee business results, search rankings, AI recommendations, introductions, market access or company value growth.
 - Preferred terminology: digital ecosystem / understandable digital ecosystem. Avoid using “digital ecosystem” where it could imply ownership interests, subsidiaries or corporate holdings.
 - LinkedIn profile: https://www.linkedin.com/in/norbertbanhalmi/
