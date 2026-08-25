@@ -11,125 +11,32 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/>
   </url>
-  <url>
-    <loc>https://business.vipach.at/de-at/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/en/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/>
-  </url>
+  <url><loc>https://business.vipach.at/de-at/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/></url>
+  <url><loc>https://business.vipach.at/en/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/></url>
 
-  <!-- Rólunk / About (3 nyelv) -->
-  <url>
-    <loc>https://business.vipach.at/about/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/about/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/about/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/about/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/de-at/about/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/about/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/about/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/about/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/en/about/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/about/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/about/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/about/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/about/"/>
-  </url>
+  <!-- About -->
+  <url><loc>https://business.vipach.at/about/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/about/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/about/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/about/"/></url>
+  <url><loc>https://business.vipach.at/de-at/about/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/about/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/about/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/about/"/></url>
+  <url><loc>https://business.vipach.at/en/about/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/about/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/about/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/about/"/></url>
 
-  <!-- Impresszum (3 nyelv) -->
-  <url>
-    <loc>https://business.vipach.at/impressum/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/impressum/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/de-at/impressum/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/impressum/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/en/impressum/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/impressum/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/impressum/"/>
-  </url>
+  <!-- Impressum -->
+  <url><loc>https://business.vipach.at/impressum/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/impressum/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/impressum/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/impressum/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/impressum/"/></url>
+  <url><loc>https://business.vipach.at/de-at/impressum/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/impressum/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/impressum/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/impressum/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/impressum/"/></url>
+  <url><loc>https://business.vipach.at/en/impressum/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/impressum/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/impressum/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/impressum/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/impressum/"/></url>
 
-  <!-- Adatvédelem / Privacy (3 nyelv) -->
-  <url>
-    <loc>https://business.vipach.at/privacy/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/privacy/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/de-at/privacy/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/privacy/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/en/privacy/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/privacy/"/>
-  </url>
+  <!-- Privacy -->
+  <url><loc>https://business.vipach.at/privacy/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/privacy/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/privacy/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/privacy/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/privacy/"/></url>
+  <url><loc>https://business.vipach.at/de-at/privacy/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/privacy/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/privacy/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/privacy/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/privacy/"/></url>
+  <url><loc>https://business.vipach.at/en/privacy/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/privacy/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/privacy/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/privacy/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/privacy/"/></url>
 
-  <!-- DACH Market Entry & Expansion (3 nyelv) -->
-  <url>
-    <loc>https://business.vipach.at/dach-market-entry/</loc>
-    <lastmod>2026-08-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/de-at/dach-markteintritt/</loc>
-    <lastmod>2026-08-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/>
-  </url>
-  <url>
-    <loc>https://business.vipach.at/en/dach-market-entry/</loc>
-    <lastmod>2026-08-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/>
-  </url>
+  <!-- DACH Market Entry & Expansion -->
+  <url><loc>https://business.vipach.at/dach-market-entry/</loc><lastmod>2026-08-25</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/></url>
+  <url><loc>https://business.vipach.at/de-at/dach-markteintritt/</loc><lastmod>2026-08-25</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/></url>
+  <url><loc>https://business.vipach.at/en/dach-market-entry/</loc><lastmod>2026-08-25</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/></url>
+
+  <!-- US Market Entry & Expansion -->
+  <url><loc>https://business.vipach.at/us-market-entry/</loc><lastmod>2026-08-25</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/us-market-entry/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/us-markteintritt/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/us-market-entry/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/us-market-entry/"/></url>
+  <url><loc>https://business.vipach.at/de-at/us-markteintritt/</loc><lastmod>2026-08-25</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/us-market-entry/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/us-markteintritt/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/us-market-entry/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/us-market-entry/"/></url>
+  <url><loc>https://business.vipach.at/en/us-market-entry/</loc><lastmod>2026-08-25</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/us-market-entry/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/us-markteintritt/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/us-market-entry/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/us-market-entry/"/></url>
 
 </urlset>
