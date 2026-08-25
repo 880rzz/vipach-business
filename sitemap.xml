@@ -106,4 +106,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/privacy/"/>
   </url>
 
+  <!-- DACH Market Entry & Expansion (3 nyelv) -->
+  <url>
+    <loc>https://business.vipach.at/dach-market-entry/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/>
+  </url>
+  <url>
+    <loc>https://business.vipach.at/de-at/dach-markteintritt/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/>
+  </url>
+  <url>
+    <loc>https://business.vipach.at/en/dach-market-entry/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/dach-market-entry/"/>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/dach-markteintritt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/dach-market-entry/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/dach-market-entry/"/>
+  </url>
+
 </urlset>
