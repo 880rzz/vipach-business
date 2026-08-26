@@ -36,15 +36,25 @@
     if(!video) return;
     const reduced=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const isMobile=()=>window.matchMedia && window.matchMedia('(max-width: 920px)').matches;
+    let hydrated=false;
     video.muted=true;
     video.playsInline=true;
     video.setAttribute('muted','');
     video.setAttribute('playsinline','');
     video.setAttribute('webkit-playsinline','');
     const activate=()=>hero.classList.add('is-video-active');
+    const hydrateVideo=()=>{
+      if(hydrated || isMobile() || reduced) return false;
+      video.querySelectorAll('source[data-src]').forEach(source=>{
+        source.src=source.dataset.src;
+        source.removeAttribute('data-src');
+      });
+      hydrated=true;
+      return true;
+    };
     const playVideo=()=>{
-      if(reduced) return;
-      try{video.load();}catch(err){}
+      if(reduced || isMobile()) return;
+      if(hydrateVideo()){try{video.load();}catch(err){}}
       const p=video.play();
       if(p && typeof p.then==='function'){
         p.then(activate).catch(()=>hero.classList.remove('is-video-active'));
@@ -57,30 +67,10 @@
       hero.classList.remove('is-video-active');
       try{video.pause();video.currentTime=0;}catch(err){}
     };
-    const startMobileAutoplay=()=>{
-      if(!isMobile() || reduced) return;
-      playVideo();
-    };
     hero.addEventListener('mouseenter',playVideo);
     hero.addEventListener('mouseleave',stopVideo);
     hero.addEventListener('focusin',playVideo);
     hero.addEventListener('focusout',e=>{ if(!hero.contains(e.relatedTarget)) stopVideo(); });
-    hero.addEventListener('touchstart',playVideo,{passive:true,once:true});
-    if('IntersectionObserver' in window){
-      const observer=new IntersectionObserver(entries=>{
-        entries.forEach(entry=>{
-          if(entry.isIntersecting){startMobileAutoplay();observer.disconnect();}
-        });
-      },{threshold:.28});
-      observer.observe(hero);
-    }else{
-      window.addEventListener('load',startMobileAutoplay,{once:true});
-    }
-    if(document.readyState==='complete' || document.readyState==='interactive'){
-      setTimeout(startMobileAutoplay,350);
-    }else{
-      document.addEventListener('DOMContentLoaded',()=>setTimeout(startMobileAutoplay,350),{once:true});
-    }
   });
   document.querySelectorAll('form[data-script-form="true"]').forEach(form=>{
     form.addEventListener('submit',async e=>{
