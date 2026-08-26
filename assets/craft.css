@@ -1151,3 +1151,53 @@ html.js-anim .deliverable small{
   .hero-media .actions{max-width:100%;gap:10px}
   .hero-media .btn{min-height:48px}
 }
+
+/* Navy typography + Apple-inspired H2 gradient — 2026-08-26 */
+body,
+button,
+input,
+textarea,
+h1,
+h3,
+h4,
+h5,
+h6,
+label,
+summary{
+  color:var(--ink);
+}
+p,
+li,
+.navlinks a,
+.langs a,
+.mobile a{
+  color:var(--ink2);
+}
+h2{
+  color:var(--ink);
+  background:linear-gradient(102deg,#071a33 0%,#123c6a 50%,#0071e3 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-wrap:balance;
+}
+.section.dark h2,
+.black-panel h2,
+.panel.dark h2,
+.diagnosis-card h2{
+  color:#f5f7fb;
+  background:linear-gradient(102deg,#ffffff 0%,#d9e8ff 52%,#79b7ff 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+@media(forced-colors:active){
+  h2,
+  .section.dark h2,
+  .black-panel h2,
+  .panel.dark h2,
+  .diagnosis-card h2{
+    background:none;
+    -webkit-text-fill-color:currentColor;
+  }
+}
