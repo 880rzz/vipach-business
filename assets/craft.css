@@ -1026,6 +1026,10 @@ html.js-anim .deliverable small{
    Calmer hierarchy, fewer decorative containers and a lighter mobile path. */
 :root{
   --radius:18px;
+  --ink:#071a33;
+  --ink2:#29405d;
+  --dark:#071a33;
+  --dark2:#0d2849;
   --shadow-soft:0 12px 34px rgba(0,0,0,.045);
 }
 .nav{
@@ -1083,6 +1087,13 @@ html.js-anim .deliverable small{
 }
 .deliverable:hover,.step:hover{transform:none;box-shadow:none;background:#fafafa}
 .deliverable small,.step small{color:var(--muted);font-variant-numeric:tabular-nums}
+.phase-steps .step{
+  grid-template-columns:92px minmax(240px,1fr) minmax(0,1.55fr);
+  gap:28px;
+  padding:34px 38px;
+}
+.phase-steps .step small{padding-top:4px}
+.phase-steps .step p{max-width:660px}
 .method-grid{gap:1px;background:var(--line2);border:1px solid var(--line2);border-radius:20px;overflow:hidden}
 .method-grid .text-panel,.method-grid .black-panel{border:0;border-radius:0;box-shadow:none}
 .split{gap:1px;background:var(--line2);border:1px solid var(--line2);border-radius:20px;overflow:hidden}
@@ -1101,6 +1112,8 @@ html.js-anim .deliverable small{
 .footer-executive .footer-legal-card,.footer-executive .footer-main-card{border:0;border-radius:0;background:#fff;box-shadow:none;backdrop-filter:none}
 .footer-executive .footer-accordion summary,.footer-executive .footer-accordion[open] summary{border-radius:0}
 .footer-executive .footer-legal-link{border:0;border-radius:0;background:transparent;padding:8px 0}
+.diagnosis-card{background:var(--dark2)}
+.btn.light,.btn.light:hover{color:var(--ink)}
 
 @media(max-width:920px){
   .nav-inner{min-height:60px}
@@ -1112,6 +1125,12 @@ html.js-anim .deliverable small{
   .hero-media-overlay{background:linear-gradient(180deg,rgba(3,8,20,.68),rgba(3,8,20,.78))}
   .footer-premium-head{grid-template-columns:1fr}
   .footer-trust-strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .phase-steps .step{
+    grid-template-columns:64px minmax(0,1fr);
+    gap:8px 18px;
+    padding:28px 30px;
+  }
+  .phase-steps .step p{grid-column:2;max-width:620px}
 }
 @media(max-width:760px){
   .section,.contact{padding-block:68px}
@@ -1122,6 +1141,7 @@ html.js-anim .deliverable small{
   .footer-trust-item{align-items:flex-start;flex-direction:column;gap:4px}
   .footer-trust-item span{text-align:left;max-width:none}
   .footer-premium-copy{padding:28px 24px}
+  .phase-steps .step{grid-template-columns:52px minmax(0,1fr);padding:24px 22px;gap:7px 14px}
 }
 @media(max-width:480px){
   .hero-media{min-height:auto;padding:94px 0 70px}
