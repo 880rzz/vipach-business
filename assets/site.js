@@ -1,4 +1,12 @@
 
+  /* Shared visual/runtime additions */
+  (function(){
+    const addScript=(src)=>{const s=document.createElement('script');s.src=src;s.defer=true;document.head.appendChild(s);};
+    const addStyle=(href)=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l);};
+    addStyle('/assets/executive-heading-scale.css?v=20260828-1');
+    addScript('/assets/whatsapp-fab.js?v=20260828-1');
+  })();
+
   /* Browser language routing: HU -> /, DE -> /de-at/, all other languages -> /en/
      Manual language selection is respected via localStorage. */
   (function(){
@@ -109,12 +117,11 @@
    ============================================================ */
 (function(){
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce) return;  // mozgáscsökkentésnél nem aktiválunk semmit
+  if (reduce) return;
 
   var root = document.documentElement;
-  root.classList.add('js-anim');  // ez kapcsolja be a CSS-ben a kiindulási állapotot
+  root.classList.add('js-anim');
 
-  // Reveal-jelöltek: tartalmi blokkok, amik a nézetbe úsznak
   var selectors = [
     '.section-head',
     '.deliverable',
@@ -127,14 +134,12 @@
   var nodes = [];
   selectors.forEach(function(sel){
     document.querySelectorAll(sel).forEach(function(el){
-      // a hero-n belüli elemeket kihagyjuk (azokat a hero-belépő kezeli)
       if (el.closest('.hero-content')) return;
       el.classList.add('reveal');
       nodes.push(el);
     });
   });
 
-  // Lépcsőzött késleltetés a közös szülőn belül (kártya-rácsok)
   function applyStagger(){
     var groups = {};
     nodes.forEach(function(el){
@@ -151,7 +156,6 @@
   applyStagger();
 
   if (!('IntersectionObserver' in window)){
-    // régi böngésző: egyszerűen mutassunk meg mindent
     nodes.forEach(function(el){ el.classList.add('is-visible'); });
     return;
   }
@@ -167,7 +171,6 @@
 
   nodes.forEach(function(el){ io.observe(el); });
 
-  // Biztonsági háló: ha valami a hajtás fölött van, azonnal látszódjon
   requestAnimationFrame(function(){
     nodes.forEach(function(el){
       var r = el.getBoundingClientRect();
