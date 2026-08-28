@@ -1,0 +1,1 @@
+(()=>{const s=document.createElement('link');s.rel='stylesheet';s.href='/assets/executive-heading-scale.css?v=20260828-1';document.head.appendChild(s);})();
