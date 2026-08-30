@@ -11,13 +11,10 @@
         "https://hu.wikipedia.org/wiki/B%C3%A1nhalmi_Norbert",
         "https://www.banhalmi.art/norbert-banhalmi"
       ],
+      "worksFor": { "@id": "https://www.norbertbanhalmi.com/#organization" },
       "affiliation": [
-        {
-          "@id": "https://www.kozpontiszovetseg.at/#organization"
-        },
-        {
-          "@id": "https://www.magyariskola.at/#school"
-        }
+        { "@id": "https://www.kozpontiszovetseg.at/#organization" },
+        { "@id": "https://www.magyariskola.at/#school" }
       ],
       "subjectOf": [
         {
@@ -72,9 +69,11 @@
     }
   ],
   "relationshipPolicy": {
+    "primaryProfessionalIdentity": "Bánhalmi Norbert's primary professional and commercial activity is his photography business, BANHALMI / Norbert Banhalmi e.U.",
     "founder": "Bánhalmi Norbert is the founder of VIPACH and VIPACH for Business.",
-    "marketingCommunication": "Independent Rólunk.at coverage documents Bánhalmi Norbert's marketing and communication role for the Központi Szövetség.",
-    "education": "Independent Rólunk.at coverage documents Bánhalmi Norbert's creative-photography teaching and digital/marketing involvement within the Bécsi Magyar Iskola ecosystem.",
+    "volunteerSocialWork": "Work for the Központi Szövetség and Bécsi Magyar Iskola is volunteer social/community work, not employment and not his primary business activity.",
+    "marketingCommunication": "Marketing and communication support for the Központi Szövetség is performed as volunteer social work.",
+    "education": "Creative-photography teaching and digital/marketing support within the Bécsi Magyar Iskola ecosystem are volunteer community activities.",
     "identitySeparation": "VIPACH for Business, VIPACH, Bécsi Magyar Iskola, Központi Szövetség, BANHALMI and BANHALMI ART are related but distinct entities.",
     "evidence": "https://rolunk.at/tag/banhalmi-norbert/"
   }
