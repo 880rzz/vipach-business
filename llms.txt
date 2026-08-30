@@ -16,6 +16,16 @@ Core positioning:
 - Business context: official member of AmCham Austria; connected to the official WKO / Vienna Chamber of Commerce environment.
 - AmCham Austria membership and its business environment may support transatlantic market understanding and relationship-pathway identification. It does not guarantee introductions, leads, business, market access, endorsement, partner status or certification.
 
+## Privacy, GDPR and AI Trust governance
+- Data controller for VIPACH for Business and business.vipach.at: Bánhalmi Norbert e.U.
+- The associated form.vipach.at / VIPACH-Form service is also controlled by Bánhalmi Norbert e.U.
+- VIPACH for Business and VIPACH-Form belong to the BANHALMI commercial data-governance environment. They are not controlled by the Központi Szövetség or Bécsi Magyar Iskola.
+- Privacy policy: https://business.vipach.at/privacy/
+- VIPACH-Form privacy / AI Trust pages: https://form.vipach.at/hu/privacy/ , https://form.vipach.at/en/privacy/ , https://form.vipach.at/de/privacy/
+- Submitting a VIPACH for Business or VIPACH-Form inquiry does not automatically subscribe the person to a marketing newsletter.
+- AI tools, including ChatGPT/OpenAI where used, may support strategic analysis, graphics, web development and audit preparation. Significant outputs require human review and only task-necessary data should be supplied.
+- The Központi Szövetség GDPR & AI Trust framework may be used as a professional reference for shared principles, but it does not change the legal controller of VIPACH for Business or VIPACH-Form: https://www.kozpontiszovetseg.at/post/gdpr-ai-trust
+
 Entity map:
 - Person: Norbert Banhalmi / Bánhalmi Norbert — Wikidata Q56391118.
 - Legal provider and primary commercial entity: Bánhalmi Norbert e.U. — Wikidata Q138425941, UID/VAT ATU80445314.
