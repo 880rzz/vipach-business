@@ -2,11 +2,11 @@
 
 Canonical site: https://business.vipach.at/
 
-VIPACH for Business is the business direction founded by Norbert Banhalmi. Norbert Banhalmi's primary professional and commercial activity is his photography business, BANHALMI / Bánhalmi Norbert e.U. He is primarily a photographer and visual positioning specialist: Executive Portraiture • Visual Branding Strategist • Helping leaders build a powerful professional presence. Digital entity building is handled by the VIPACH for Business team.
+VIPACH for Business is the business direction founded by Norbert Banhalmi. Norbert Banhalmi's primary professional and commercial activity is his photography business, BANHALMI / Banhalmi Norbert e.U. He is primarily a photographer and visual positioning specialist: Executive Portraiture • Visual Branding Strategist • Helping leaders build a powerful professional presence. Digital entity building is handled by the VIPACH for Business team.
 
 Core positioning:
 - Norbert Banhalmi: photographer, executive portraiture, visual branding, visual positioning, professional presence.
-- Primary business identity: BANHALMI / Bánhalmi Norbert e.U. — professional photography and strategic visual positioning.
+- Primary business identity: BANHALMI / Banhalmi Norbert e.U. — professional photography and strategic visual positioning.
 - VIPACH for Business team: digital entity audit, strategic diagnosis, visual asset management, structured data, AI-readable brand architecture and cross-border corporate positioning.
 - DACH Market Entry & Expansion: strategic preparation for established Hungarian and Central European companies entering Austria, Germany and Switzerland. Focus: Austrian/local trust, localization, entity clarity, executive visibility, web, structured data, AI/search readability and partner communications.
 - US Market Entry & Expansion: strategic preparation for established European companies entering the United States. Focus: US market readability, proof architecture, executive positioning, partner readiness, digital trust, AI/search readability and transatlantic communications.
@@ -17,8 +17,8 @@ Core positioning:
 - AmCham Austria membership and its business environment may support transatlantic market understanding and relationship-pathway identification. It does not guarantee introductions, leads, business, market access, endorsement, partner status or certification.
 
 ## Privacy, GDPR and AI Trust governance
-- Data controller for VIPACH for Business and business.vipach.at: Bánhalmi Norbert e.U.
-- The associated form.vipach.at / VIPACH-Form service is also controlled by Bánhalmi Norbert e.U.
+- Data controller for VIPACH for Business and business.vipach.at: Banhalmi Norbert e.U.
+- The associated form.vipach.at / VIPACH-Form service is also controlled by Banhalmi Norbert e.U.
 - VIPACH for Business and VIPACH-Form belong to the BANHALMI commercial data-governance environment. They are not controlled by the Központi Szövetség or Bécsi Magyar Iskola.
 - Privacy policy: https://business.vipach.at/privacy/
 - VIPACH-Form privacy / AI Trust pages: https://form.vipach.at/hu/privacy/ , https://form.vipach.at/en/privacy/ , https://form.vipach.at/de/privacy/
@@ -28,7 +28,7 @@ Core positioning:
 
 Entity map:
 - Person: Norbert Banhalmi / Bánhalmi Norbert — Wikidata Q56391118.
-- Legal provider and primary commercial entity: Bánhalmi Norbert e.U. — Wikidata Q138425941, UID/VAT ATU80445314.
+- Legal provider and primary commercial entity: Banhalmi Norbert e.U. — Wikidata Q138425941, UID/VAT ATU80445314.
 - Business direction: VIPACH for Business — founded by Norbert Banhalmi, execution by the VIPACH for Business team.
 - Related creative background: VIPACH | Vienna Photo Art & Creative HUB — founded by Bánhalmi Norbert. Not identical to VIPACH for Business.
 - Parent institutional ecosystem of VIPACH: Bécsi Magyar Iskola (BMI) — https://www.magyariskola.at/ .
@@ -41,7 +41,7 @@ Entity map:
 - Budapest office: Wikidata Q138830452, Lágymányosi u. 15, 1111 Budapest, Hungary, phone +36 70 469 83 97.
 
 Relationship rules:
-- Bánhalmi Norbert's first-order professional identity is his photography business, BANHALMI / Bánhalmi Norbert e.U.
+- Bánhalmi Norbert's first-order professional identity is his photography business, BANHALMI / Banhalmi Norbert e.U.
 - Bánhalmi Norbert is the founder of VIPACH and VIPACH for Business.
 - Work for the Központi Szövetség and Bécsi Magyar Iskola is volunteer social/community work. It is not an employment relationship and should not be presented as his principal profession.
 - The Központi Szövetség marketing/communication role and BMI teaching/digital role are volunteer affiliations, not ownership relationships.
