@@ -13,7 +13,7 @@ Core positioning:
 
 Entity map:
 - Person: Norbert Banhalmi / Bánhalmi Norbert — Wikidata Q56391118.
-- Legal provider: Banhalmi Norbert e.U. — Wikidata Q138425941, UID/VAT ATU80445314.
+- Legal provider: Banhalmi Norbert e.U. (trade name: BANHALMI Photography) — Wikidata Q138425941, UID/VAT ATU80445314.
 - Business direction: VIPACH for Business — founded by Norbert Banhalmi, execution by the VIPACH for Business team.
 - Related creative background: VIPACH | Vienna Photo Art & Creative HUB — Wikidata Q138416887. Not identical to VIPACH for Business.
 - Vienna office: Wikidata Q138426506, Schwedenplatz 2 / Laurenzerberg 5/I/8-9, 1010 Wien, Austria, phone +43 677 616 555 92.
