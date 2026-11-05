@@ -27,5 +27,9 @@ for (const group of groups) {
     if (html.includes('https://www.norbertbanhalmi.com/privacy-policy')) errors.push(path + ': legacy privacy link');
   }
 }
+const runtime = fs.readFileSync('assets/site.js', 'utf8');
+if (runtime.includes("data.append('userAgent'")) errors.push('assets/site.js: unnecessary userAgent collection');
+if (runtime.includes("data.append('page',location.href)") || runtime.includes("data.append('page_url',location.href)")) errors.push('assets/site.js: full URL may leak query parameters');
+if (!runtime.includes("Form relay network failure")) errors.push('assets/site.js: missing form network-error guard');
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
 else console.log('SEO integrity checks passed for 12 multilingual service/about routes.');
