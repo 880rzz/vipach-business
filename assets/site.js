@@ -109,13 +109,15 @@
         if(!message.parentElement) form.appendChild(message);
         return;
       }
-      // no-cors produces an opaque response: successful delivery cannot be verified here.
+      // An opaque no-cors response does not confirm server-side receipt.
+      // Keep the submitted data intact so the visitor can retry or use another contact method.
       const ok=form.querySelector('.success-banner');
-      if(ok) ok.classList.add('show');
-      form.reset();
+      if(ok){
+        ok.textContent=document.documentElement.lang.startsWith('de')?'Die Übermittlung wurde im Browser gestartet. Eine Bestätigung des Eingangs ist technisch nicht verfügbar. Falls Sie keine Rückmeldung erhalten, kontaktieren Sie uns bitte direkt.':document.documentElement.lang.startsWith('en')?'Your browser initiated the request, but receipt cannot be confirmed. If you do not hear from us, please contact us directly.':'A böngésző elindította a beküldést, de a beérkezés nem igazolható. Ha nem kap választ, kérjük, keressen bennünket közvetlenül.';
+        ok.setAttribute('role','status');
+        ok.classList.add('show');
+      }
       if(btn){btn.disabled=false;btn.textContent=original;}
-      const redirect=form.dataset.redirect;
-      if(redirect) setTimeout(()=>{location.href=redirect;},900);
     });
   });
 })();
