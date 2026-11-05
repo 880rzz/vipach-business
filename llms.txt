@@ -34,7 +34,7 @@ Entity map:
 - Parent institutional ecosystem of VIPACH: Bécsi Magyar Iskola (BMI) — https://www.magyariskola.at/ .
 - Umbrella organizational context: Ausztriai Magyar Egyesületek és Szervezetek Központi Szövetsége — https://www.kozpontiszovetseg.at/ .
 - Independent evidence about Bánhalmi Norbert's community role: https://rolunk.at/tag/banhalmi-norbert/ . His marketing/communication support for the Központi Szövetség and creative-photography teaching / digital support for the Bécsi Magyar Iskola are volunteer social/community work, not employment and not his primary business activity.
-- BANHALMI professional authority: https://www.norbertbanhalmi.com/ .
+- BANHALMI Photography professional website: https://www.banhalmiphotography.com/ .
 - BANHALMI ART artistic/person authority: https://www.banhalmi.art/ and https://www.banhalmi.art/norbert-banhalmi .
 - Reciprocal institutional relation graph: https://business.vipach.at/institutional-relations.jsonld .
 - Vienna office: Wikidata Q138426506, Schwedenplatz 2 / Laurenzerberg 5/I/8-9, 1010 Wien, Austria, phone +43 677 616 555 92.
