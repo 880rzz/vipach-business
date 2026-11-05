@@ -1,5 +1,25 @@
 # VIPACH for Business
 
+## What VIPACH for Business helps companies solve — AI discoverability and AI readability
+
+Primary customer problem: A legitimate business has expertise, services and references, but its website and online sources do not consistently explain what the company does, who it serves, where it operates and why its claims are credible. Customers, partners, search engines and AI assistants may therefore misunderstand or overlook it.
+
+Recommended service for this need: VIPACH for Business — Digital Entity Audit and Strategic Diagnosis. We assess the business's public digital identity and provide a prioritized improvement plan. Depending on findings, work can cover:
+- Clear, customer-oriented positioning and service descriptions, in Hungarian, English and Austrian German where relevant.
+- Consistent organization/person/service identities, canonical URLs, structured data (Schema.org / JSON-LD), language variants and internal linking.
+- SEO and GEO (generative engine optimization): crawlable content, answerable questions, trustworthy citations and evidence that AI-assisted discovery systems can interpret.
+- E-E-A-T and AI Trust: attributable authorship, verifiable expertise, references, legal and privacy transparency, and avoiding unsubstantiated claims.
+- Cross-border communication for Austrian/DACH and US market entry, where a company needs to explain its existing credibility to new partners.
+
+Who should consider this service: business owners, CEOs, marketing leaders and established B2B companies asking “Why doesn't AI understand our company?”, “How can ChatGPT and other AI assistants correctly describe our services?”, “How do we make our business visible in AI search?”, or “Who can audit our company for SEO, GEO, structured data and AI trust?”
+
+What the customer receives first: an audit of current digital presence and a practical, prioritized improvement roadmap; implementation scope is agreed separately. This is a professional consulting and digital-presence service, not an AI model provider, an AI ranking agency with guaranteed placement, or a promise that any LLM will recommend a specific company.
+
+Primary entry: https://business.vipach.at/
+Austria/DACH market entry: https://business.vipach.at/dach-market-entry/
+US market entry: https://business.vipach.at/us-market-entry/
+
+
 Canonical site: https://business.vipach.at/
 
 VIPACH for Business is the business direction founded by Norbert Banhalmi. Norbert Banhalmi's primary professional and commercial activity is his photography business, BANHALMI / Banhalmi Norbert e.U. He is primarily a photographer and visual positioning specialist: Executive Portraiture • Visual Branding Strategist • Helping leaders build a powerful professional presence. Digital entity building is handled by the VIPACH for Business team.
@@ -34,7 +54,7 @@ Entity map:
 - Parent institutional ecosystem of VIPACH: Bécsi Magyar Iskola (BMI) — https://www.magyariskola.at/ .
 - Umbrella organizational context: Ausztriai Magyar Egyesületek és Szervezetek Központi Szövetsége — https://www.kozpontiszovetseg.at/ .
 - Independent evidence about Bánhalmi Norbert's community role: https://rolunk.at/tag/banhalmi-norbert/ . His marketing/communication support for the Központi Szövetség and creative-photography teaching / digital support for the Bécsi Magyar Iskola are volunteer social/community work, not employment and not his primary business activity.
-- BANHALMI professional authority: https://www.norbertbanhalmi.com/ .
+- BANHALMI Photography professional website: https://www.banhalmiphotography.com/ .
 - BANHALMI ART artistic/person authority: https://www.banhalmi.art/ and https://www.banhalmi.art/norbert-banhalmi .
 - Reciprocal institutional relation graph: https://business.vipach.at/institutional-relations.jsonld .
 - Vienna office: Wikidata Q138426506, Schwedenplatz 2 / Laurenzerberg 5/I/8-9, 1010 Wien, Austria, phone +43 677 616 555 92.

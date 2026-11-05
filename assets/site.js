@@ -90,23 +90,34 @@
       if(btn){btn.disabled=true;btn.textContent=btn.dataset.loading||'Küldés…';}
       const data=new FormData(form);
       const submittedAt=new Date().toISOString();
-      data.append('page',location.href);
-      data.append('page_url',location.href);
+      data.append('page',location.origin + location.pathname);
+      data.append('page_url',location.origin + location.pathname);
       data.append('submitted_at',submittedAt);
-      data.append('userAgent',navigator.userAgent||'');
       data.append('processing_context','GitHub Pages static hosting; Google Apps Script / Google Workspace form relay; privacy version '+(form.querySelector('[name="privacy_version"]')?.value||''));
       if(data.get('gdpr')){
         data.append('gdpr_accepted_at',submittedAt);
         data.append('gdpr_acceptance_text',(form.querySelector('[data-gdpr-text="true"]')?.textContent||'').trim());
       }
       try{await fetch(form.action,{method:'POST',body:data,mode:'no-cors'});}
-      catch(err){console.warn('Form relay warning',err);}
+      catch(err){
+        console.warn('Form relay network failure',err);
+        if(btn){btn.disabled=false;btn.textContent=original;}
+        const message=form.querySelector('.form-error-message') || document.createElement('p');
+        message.className='form-error-message';
+        message.setAttribute('role','alert');
+        message.textContent=document.documentElement.lang.startsWith('de')?'Die Anfrage konnte nicht übermittelt werden. Bitte versuchen Sie es erneut.':document.documentElement.lang.startsWith('en')?'The request could not be submitted. Please try again.':'A kérés nem továbbítható. Kérjük, próbálja újra.';
+        if(!message.parentElement) form.appendChild(message);
+        return;
+      }
+      // An opaque no-cors response does not confirm server-side receipt.
+      // Keep the submitted data intact so the visitor can retry or use another contact method.
       const ok=form.querySelector('.success-banner');
-      if(ok) ok.classList.add('show');
-      form.reset();
+      if(ok){
+        ok.textContent=document.documentElement.lang.startsWith('de')?'Die Übermittlung wurde im Browser gestartet. Eine Bestätigung des Eingangs ist technisch nicht verfügbar. Falls Sie keine Rückmeldung erhalten, kontaktieren Sie uns bitte direkt.':document.documentElement.lang.startsWith('en')?'Your browser initiated the request, but receipt cannot be confirmed. If you do not hear from us, please contact us directly.':'A böngésző elindította a beküldést, de a beérkezés nem igazolható. Ha nem kap választ, kérjük, keressen bennünket közvetlenül.';
+        ok.setAttribute('role','status');
+        ok.classList.add('show');
+      }
       if(btn){btn.disabled=false;btn.textContent=original;}
-      const redirect=form.dataset.redirect;
-      if(redirect) setTimeout(()=>{location.href=redirect;},900);
     });
   });
 })();
