@@ -31,5 +31,7 @@ const runtime = fs.readFileSync('assets/site.js', 'utf8');
 if (runtime.includes("data.append('userAgent'")) errors.push('assets/site.js: unnecessary userAgent collection');
 if (runtime.includes("data.append('page',location.href)") || runtime.includes("data.append('page_url',location.href)")) errors.push('assets/site.js: full URL may leak query parameters');
 if (!runtime.includes("Form relay network failure")) errors.push('assets/site.js: missing form network-error guard');
+if (runtime.includes("form.reset();") || runtime.includes("location.href=redirect")) errors.push('assets/site.js: opaque form submission must not reset or redirect as confirmed success');
+if (!runtime.includes('receipt cannot be confirmed')) errors.push('assets/site.js: missing transparent unconfirmed-delivery notice');
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
 else console.log('SEO integrity checks passed for 12 multilingual service/about routes.');
