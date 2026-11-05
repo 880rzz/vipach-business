@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+// Run: node scripts/check-seo-integrity.mjs
+import fs from 'node:fs';
+const base = 'https://business.vipach.at';
+const groups = [
+  ['/', '/en/', '/de-at/'],
+  ['/about/', '/en/about/', '/de-at/about/'],
+  ['/dach-market-entry/', '/en/dach-market-entry/', '/de-at/dach-markteintritt/'],
+  ['/us-market-entry/', '/en/us-market-entry/', '/de-at/us-markteintritt/'],
+];
+let errors = [];
+for (const group of groups) {
+  for (const route of group) {
+    const path = route === '/' ? 'index.html' : route.slice(1) + 'index.html';
+    const html = fs.readFileSync(path, 'utf8');
+    const canon = [...html.matchAll(/<link\b[^>]*\brel=["']canonical["'][^>]*>/gi), ...html.matchAll(/<link\b[^>]*\bhref=["'][^"']+["'][^>]*\brel=["']canonical["'][^>]*>/gi)];
+    if (canon.length !== 1 || !canon[0][0].includes(base + route)) errors.push(path + ': missing or incorrect canonical');
+    const lang = route.startsWith('/en/') ? 'en' : route.startsWith('/de-at/') ? 'de-AT' : 'hu';
+    for (const [code, target] of [['hu',group[0]], ['en',group[1]], ['de-AT',group[2]]]) {
+      const tags = [...html.matchAll(/<link\b[^>]*\brel=["']alternate["'][^>]*>/gi), ...html.matchAll(/<link\b[^>]*\bhreflang=["'][^"']+["'][^>]*\brel=["']alternate["'][^>]*>/gi)];
+      if (!tags.some(m => m[0].includes('hreflang="'+code+'"') && m[0].includes(base+target))) errors.push(path + ': missing hreflang '+code);
+    }
+    if (!html.includes('<html lang="'+(lang === 'de-AT' ? 'de' : lang)+'"') && !html.includes('<html lang="'+lang+'"')) errors.push(path + ': html lang mismatch');
+    for (const match of html.matchAll(/<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi)) {
+      try { JSON.parse(match[1]); } catch (err) { errors.push(path + ': invalid JSON-LD: ' + err.message); }
+    }
+    if (html.includes('https://www.norbertbanhalmi.com/privacy-policy')) errors.push(path + ': legacy privacy link');
+  }
+}
+if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
+else console.log('SEO integrity checks passed for 12 multilingual service/about routes.');
