@@ -121,3 +121,9 @@ main h3{font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:-.015em;
 #self-audit [role="status"]{font-size:14px;line-height:1.5;color:#424245}
 #self-audit .audit-disclaimer{margin:26px 0 0;max-width:70ch;font-size:13px;line-height:1.65;color:#6e6e73}
 @media(max-width:700px){#self-audit .audit-builder{width:calc(100% - 40px)}#self-audit .audit-builder-form{grid-template-columns:1fr}#self-audit .audit-action{width:100%;justify-self:stretch}}
+
+/* Public profile URL inputs and readable multiline fields. */
+#self-audit .audit-field-wide{grid-column:1/-1}
+#self-audit .audit-field textarea{box-sizing:border-box;width:100%;min-height:100px;resize:vertical;border:1px solid #b9b9bf;border-radius:12px;background:#fff;color:#1d1d1f;padding:14px 16px;font:inherit;font-size:16px;line-height:1.55}
+#self-audit .audit-field textarea:focus-visible{outline:3px solid #0071e3;outline-offset:3px}
+#self-audit .audit-disclaimer+.audit-disclaimer{margin-top:8px}
