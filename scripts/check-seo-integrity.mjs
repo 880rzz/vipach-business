@@ -35,7 +35,7 @@ for (const group of groups) {
 }
 const typographyCss = fs.readFileSync('assets/typography-refinement.css', 'utf8');
 if (!typographyCss.includes('font-size:clamp(29px,3.25vw,43px)')) errors.push('typography: unexpected H1 scale');
-if (!typographyCss.includes('font-size:clamp(23px,2.45vw,32px)')) errors.push('typography: unexpected H2 scale');
+if (!typographyCss.includes('font-size:clamp(18px,1.84vw,24px)')) errors.push('typography: unexpected H2 scale');
 const runtime = fs.readFileSync('assets/site.js', 'utf8');
 if (runtime.includes("addStyle('/assets/typography-refinement.css")) errors.push('assets/site.js: late stylesheet injection can cause layout shift');
 if (runtime.includes('navigator.languages') && (runtime.includes("window.location.replace('/en/')") || runtime.includes("window.location.replace('/de-at/')"))) errors.push('assets/site.js: browser-language redirects conflict with locale canonical URLs');
