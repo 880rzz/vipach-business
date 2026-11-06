@@ -49,3 +49,10 @@ main h3{font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:-.015em;
 
 /* Reduce remaining former 30px display-style subheadings consistently. */
 .time h3{font-size:22.5px!important;line-height:1.3!important;letter-spacing:-.02em!important;font-weight:600}
+
+/* Editorial explanatory section: precise, readable, no decorative cards. */
+.vipach-explainer{border-top:1px solid var(--line2)}
+.vipach-explainer-item{padding:24px 0;border-bottom:1px solid var(--line2)}
+.vipach-explainer-item h3{margin:0 0 9px;font-size:clamp(18px,1.65vw,21px);line-height:1.32;font-weight:600;letter-spacing:-.015em}
+.vipach-explainer-item p{margin:0;max-width:72ch;font-size:clamp(16px,1.35vw,17px);line-height:1.68;letter-spacing:0;color:var(--ink2)}
+@media(max-width:760px){.vipach-explainer-item{padding:20px 0}}
