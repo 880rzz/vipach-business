@@ -127,3 +127,12 @@ main h3{font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:-.015em;
 #self-audit .audit-field textarea{box-sizing:border-box;width:100%;min-height:100px;resize:vertical;border:1px solid #b9b9bf;border-radius:12px;background:#fff;color:#1d1d1f;padding:14px 16px;font:inherit;font-size:16px;line-height:1.55}
 #self-audit .audit-field textarea:focus-visible{outline:3px solid #0071e3;outline-offset:3px}
 #self-audit .audit-disclaimer+.audit-disclaimer{margin-top:8px}
+
+/* Self-audit entry: quiet third CTA, without competing with primary actions. */
+.hero .hero-audit-link{display:inline-flex;align-items:center;gap:6px;margin-top:18px;color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:5px;font-size:clamp(14px,1.2vw,16px);line-height:1.55;font-weight:500;max-width:100%}
+.hero .hero-audit-link:hover{text-decoration-color:#fff}
+.hero .hero-audit-link:focus-visible{outline:2px solid #fff;outline-offset:5px;border-radius:2px}
+#self-audit .audit-help{margin-top:26px;padding:22px 26px;border-left:2px solid #86868b;background:#fff;border-radius:0 12px 12px 0}
+#self-audit .audit-help h3{font-size:18px;line-height:1.35;margin:0 0 10px;color:#1d1d1f;font-weight:600}
+#self-audit .audit-help p{font-size:15px;line-height:1.7;margin:0;max-width:70ch;color:#424245}
+@media(max-width:700px){#self-audit .audit-help{padding:20px}.hero .hero-audit-link{margin-top:16px}}
