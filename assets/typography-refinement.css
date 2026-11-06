@@ -136,3 +136,11 @@ main h3{font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:-.015em;
 #self-audit .audit-help h3{font-size:18px;line-height:1.35;margin:0 0 10px;color:#1d1d1f;font-weight:600}
 #self-audit .audit-help p{font-size:15px;line-height:1.7;margin:0;max-width:70ch;color:#424245}
 @media(max-width:700px){#self-audit .audit-help{padding:20px}.hero .hero-audit-link{margin-top:16px}}
+
+/* Post-audit remediation CTA: visible but secondary to the free tool. */
+#self-audit .audit-next-step{margin-top:28px;padding:24px 0;border-top:1px solid #d2d2d7}
+#self-audit .audit-next-step h3{font-size:clamp(18px,2vw,22px);letter-spacing:-.02em;line-height:1.3;margin:0 0 10px;color:#1d1d1f}
+#self-audit .audit-next-step p{font-size:15px;line-height:1.7;color:#424245;max-width:65ch;margin:0 0 15px}
+#self-audit .audit-next-link{display:inline-flex;align-items:center;min-height:44px;color:#0066cc;font-size:15px;font-weight:600;text-decoration:none;text-underline-offset:4px}
+#self-audit .audit-next-link:hover{text-decoration:underline}
+#self-audit .audit-next-link:focus-visible{outline:3px solid #0071e3;outline-offset:3px}
