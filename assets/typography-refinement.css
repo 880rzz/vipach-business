@@ -100,3 +100,24 @@ main h3{font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:-.015em;
  #practical-questions .vipach-explainer-item p{grid-column:1;line-height:1.7}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Self-service audit prompt builder: quiet editorial surface. */
+#self-audit{background:#f5f5f7;color:#1d1d1f}
+#self-audit .audit-builder{width:min(860px,calc(100% - 48px));margin-inline:auto;padding-block:clamp(20px,4vw,48px)}
+#self-audit .audit-eyebrow{font-size:13px;letter-spacing:.075em;text-transform:uppercase;color:#6e6e73;font-weight:600;margin:0 0 14px}
+#self-audit h2{font-size:clamp(24px,3vw,36px)!important;letter-spacing:-.035em;line-height:1.14;margin:0 0 20px;color:#1d1d1f}
+#self-audit .audit-intro{max-width:66ch;font-size:clamp(16px,1.45vw,18px);line-height:1.7;color:#424245;margin:0 0 34px}
+#self-audit .audit-builder-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#self-audit .audit-field{display:flex;flex-direction:column;gap:9px;min-width:0}
+#self-audit .audit-field label{font-size:14px;font-weight:600;color:#1d1d1f}
+#self-audit .audit-field input,#self-audit .audit-result textarea{box-sizing:border-box;width:100%;border:1px solid #b9b9bf;border-radius:12px;background:#fff;color:#1d1d1f;padding:14px 16px;font:inherit;font-size:16px;line-height:1.5}
+#self-audit .audit-field input:focus-visible,#self-audit .audit-result textarea:focus-visible,#self-audit button:focus-visible{outline:3px solid #0071e3;outline-offset:3px}
+#self-audit .audit-action{justify-self:start;align-self:end;min-height:48px;border:0;border-radius:24px;padding:12px 24px;background:#1d1d1f;color:#fff;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+#self-audit .audit-action:hover{background:#424245}
+#self-audit .audit-result{margin-top:24px}
+#self-audit .audit-result textarea{min-height:220px;resize:vertical;font-size:14px;line-height:1.6}
+#self-audit .audit-copy{margin-top:14px}
+#self-audit [hidden]{display:none!important}
+#self-audit [role="status"]{font-size:14px;line-height:1.5;color:#424245}
+#self-audit .audit-disclaimer{margin:26px 0 0;max-width:70ch;font-size:13px;line-height:1.65;color:#6e6e73}
+@media(max-width:700px){#self-audit .audit-builder{width:calc(100% - 40px)}#self-audit .audit-builder-form{grid-template-columns:1fr}#self-audit .audit-action{width:100%;justify-self:stretch}}
