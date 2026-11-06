@@ -3,7 +3,7 @@
   (function(){
     const addScript=(src)=>{const s=document.createElement('script');s.src=src;s.defer=true;document.head.appendChild(s);};
     const addStyle=(href)=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l);};
-    addStyle('/assets/executive-heading-scale.css?v=20260828-1');
+    addStyle('/assets/typography-refinement.css?v=20261106-1');
     addScript('/assets/whatsapp-fab.js?v=20260828-1');
   })();
 
