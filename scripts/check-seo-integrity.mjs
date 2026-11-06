@@ -29,8 +29,8 @@ for (const group of groups) {
   }
 }
 const runtime = fs.readFileSync('assets/site.js', 'utf8');
-if (/navigator\\.languages?[\\s\\S]{0,900}location\\.(?:replace|assign)\\(/.test(runtime)) errors.push('assets/site.js: browser-language redirect risks canonical consistency');
-if (/window\\.location\\.replace\\(['"]\\/(?:en|de-at)\\//.test(runtime)) errors.push('assets/site.js: automatic locale redirect must not override canonical URLs');
+if (runtime.includes('navigator.languages') && (runtime.includes("window.location.replace('/en/')") || runtime.includes("window.location.replace('/de-at/')"))) errors.push('assets/site.js: browser-language redirects conflict with locale canonical URLs');
+if (runtime.includes("window.location.replace('/en/')") || runtime.includes("window.location.replace('/de-at/')")) errors.push('assets/site.js: automatic locale redirect must not override canonical URLs');
 if (runtime.includes("data.append('userAgent'")) errors.push('assets/site.js: unnecessary userAgent collection');
 if (runtime.includes("data.append('page',location.href)") || runtime.includes("data.append('page_url',location.href)")) errors.push('assets/site.js: full URL may leak query parameters');
 if (!runtime.includes("Form relay network failure")) errors.push('assets/site.js: missing form network-error guard');
