@@ -29,7 +29,7 @@ for (const group of groups) {
     if (typography.length !== 1) errors.push(path + ': refined typography must load exactly once in the document head');
     if (!typography[0]?.includes('rel="stylesheet"')) errors.push(path + ': typography must be a stylesheet link');
     if (!html.includes('<h1')) errors.push(path + ': missing primary heading');
-    if (/<h[12][^>]*>[\\s\\S]*?<br\\s*\\/?>[\\s\\S]*?<\\/h[12]>/i.test(html)) errors.push(path + ': forced heading line breaks prevent responsive wrapping');
+    if (/<h[12][^>]*>[\s\S]*?<br\s*\/?>[\s\S]*?<\/h[12]>/i.test(html)) errors.push(path + ': forced heading line breaks prevent responsive wrapping');
     if (html.includes('https://www.norbertbanhalmi.com/privacy-policy')) errors.push(path + ': legacy privacy link');
   }
 }
