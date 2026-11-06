@@ -3,7 +3,7 @@
   (function(){
     const addScript=(src)=>{const s=document.createElement('script');s.src=src;s.defer=true;document.head.appendChild(s);};
     const addStyle=(href)=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;document.head.appendChild(l);};
-    addStyle('/assets/typography-refinement.css?v=20261106-1');
+    /* Typography stylesheet is loaded in each page head to prevent late reflow. */
     addScript('/assets/whatsapp-fab.js?v=20260828-1');
   })();
 
