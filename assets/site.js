@@ -7,31 +7,18 @@
     addScript('/assets/whatsapp-fab.js?v=20260828-1');
   })();
 
-  /* Browser language routing: HU -> /, DE -> /de-at/, all other languages -> /en/
-     Manual language selection is respected via localStorage. */
+  /* Stable language URLs: / is HU, /en/ is EN, /de-at/ is DE-AT.
+     Do not redirect by browser language: each locale must remain directly
+     addressable and match its declared canonical/hreflang URL. */
   (function(){
     const STORAGE_KEY='vipachPreferredLanguage';
-    const path=window.location.pathname;
-    const isRoot=path==='/' || path==='/index.html';
-    const hasManualChoice=localStorage.getItem(STORAGE_KEY);
     document.querySelectorAll('.nav-language a,.langs a').forEach(link=>{
       link.addEventListener('click',()=>{
         const href=link.getAttribute('href') || '';
-        if(href.startsWith('/de-at')) localStorage.setItem(STORAGE_KEY,'de');
-        else if(href.startsWith('/en')) localStorage.setItem(STORAGE_KEY,'en');
-        else localStorage.setItem(STORAGE_KEY,'hu');
+        const lang=href.startsWith('/de-at') ? 'de' : href.startsWith('/en') ? 'en' : 'hu';
+        try { localStorage.setItem(STORAGE_KEY,lang); } catch (_) {}
       });
     });
-    if(!isRoot || hasManualChoice) return;
-    const languages=(navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''])
-      .map(lang=>String(lang).toLowerCase());
-    const first=languages[0] || '';
-    if(first.startsWith('hu')) return;
-    if(first.startsWith('de')){
-      window.location.replace('/de-at/');
-      return;
-    }
-    window.location.replace('/en/');
   })();
 
 (function(){
