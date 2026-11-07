@@ -5,14 +5,14 @@
   <!-- Főoldal (3 nyelv) -->
   <url>
     <loc>https://business.vipach.at/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/>
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/>
   </url>
-  <url><loc>https://business.vipach.at/de-at/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/></url>
-  <url><loc>https://business.vipach.at/en/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/></url>
+  <url><loc>https://business.vipach.at/de-at/</loc><lastmod>2026-11-07</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/></url>
+  <url><loc>https://business.vipach.at/en/</loc><lastmod>2026-11-07</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/"/></url>
 
   <!-- About -->
   <url><loc>https://business.vipach.at/about/</loc><lastmod>2026-06-20</lastmod><xhtml:link rel="alternate" hreflang="hu" href="https://business.vipach.at/about/"/><xhtml:link rel="alternate" hreflang="de-AT" href="https://business.vipach.at/de-at/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://business.vipach.at/en/about/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://business.vipach.at/about/"/></url>
