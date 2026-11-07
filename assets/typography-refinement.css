@@ -168,3 +168,14 @@ main h3{font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:-.015em;
 .vipach-booking{background:#f0f4fb}
 .vipach-contact-dock :focus-visible{outline:3px solid #0071e3;outline-offset:3px}
 @media(max-width:700px){.ai-footprint-grid{grid-template-columns:1fr}.hero .hero-audit-prominent{width:100%;box-sizing:border-box;text-align:center}.vipach-contact-dock{right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px))}}
+
+/* Plain-language AI explanation and questionnaire journey */
+.ai-explained-grid{max-width:1100px;margin:34px auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:0 22px}
+.ai-explained-grid article{background:#f5f5f7;border:1px solid #e9e9ed;border-radius:16px;padding:26px}
+.ai-explained-grid article h3{font-size:clamp(17px,2vw,21px);line-height:1.35;margin:0 0 12px}
+.ai-explained-grid article p,.ai-explained-process p{line-height:1.75;color:#45454a}
+.ai-explained-process{padding-top:12px;padding-bottom:10px}
+.ai-explained-process h2{font-size:clamp(24px,3vw,36px);line-height:1.2}
+.ai-explained-actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}
+.ai-explained-note{font-size:13px;color:#626268}
+@media(max-width:720px){.ai-explained-grid{grid-template-columns:1fr;padding:0 18px}.ai-explained-grid article{padding:20px}.ai-explained-actions{flex-direction:column}.ai-explained-actions .btn{width:100%;box-sizing:border-box;text-align:center}}
