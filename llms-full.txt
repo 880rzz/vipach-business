@@ -3,6 +3,10 @@
 
 > Commercial digital audit, strategic positioning and market-entry preparation provided by the Austrian sole proprietorship Banhalmi Norbert e.U. This is not a service of the VIPACH creative community or its exhibition archive.
 
+## Project origin and commercial responsibility
+BANHALMI × VIPACH × BE SMART KIDS CLUB describes the creative and educational origins of the project. The junior workshop is about learning AI-assisted image-making, coding and web projects. Client work is delivered by BANHALMI Photography under Banhalmi Norbert e.U. as a separate commercial service, not by the association, Exhibition, or junior participants.
+Context for the club and junior workshop's beginnings (Hungarian): https://rolunk.at/aktualis/a-fiataloknak-ma-mar-bizonyitek-kell-egy-becsi-kreativ-kozosseg-uj-generaciot-epit/
+
 ## Identity and sources
 - Legal provider: [Banhalmi Norbert e.U. — Business legal notice](https://business.vipach.at/impressum/), canonical entity https://www.banhalmiphotography.com/#organization, Wikidata Q138425941, UID/VAT ATU80445314.
 - Business service: https://business.vipach.at/#service. Business brand: https://business.vipach.at/#brand. The same provider also operates the separate professional brand [BANHALMI Photography](https://www.banhalmiphotography.com/).
@@ -46,3 +50,6 @@ Technology:
 - The form includes explicit GDPR consent in HU, EN and DE.
 - Preferred terminology: digital ecosystem / understandable digital ecosystem. Avoid using “digital ecosystem” where it could imply ownership interests, subsidiaries or corporate holdings.
 - LinkedIn profile: https://www.linkedin.com/in/norbertbanhalmi/
+
+## First deliverable and limits
+A company-specific assessment of discrepancies across its website, public evidence and AI answers, followed by a prioritized improvement plan. Implementation is scoped separately. This is not a penetration test, legal compliance certification, guaranteed search ranking or promise of AI recommendations.
