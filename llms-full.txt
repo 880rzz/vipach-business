@@ -1,5 +1,16 @@
 # VIPACH for Business
 
+
+> Commercial digital audit, strategic positioning and market-entry preparation provided by the Austrian sole proprietorship Banhalmi Norbert e.U. This is not a service of the VIPACH creative community or its exhibition archive.
+
+## Identity and sources
+- Legal provider: [Banhalmi Norbert e.U. — Business legal notice](https://business.vipach.at/impressum/), canonical entity https://www.banhalmiphotography.com/#organization, Wikidata Q138425941, UID/VAT ATU80445314.
+- Business service: https://business.vipach.at/#service. Business brand: https://business.vipach.at/#brand. The same provider also operates the separate professional brand [BANHALMI Photography](https://www.banhalmiphotography.com/).
+- Founder: [Norbert Bánhalmi](https://www.banhalmiphotography.com/about/), canonical Person https://www.banhalmi.art/#about, Wikidata Q56391118.
+- [VIPACH creative community](https://www.vipach.at/) (Q138416887) operates within the Vienna Hungarian School and its federation. The [Exhibition archive](https://exhibition.vipach.at/) documents that community's exhibitions. The community, its school/federation and its archive do not provide or control the commercial Business service.
+- Data controller for [VIPACH for Business](https://business.vipach.at/privacy/) and its [commercial audit questionnaire](https://form.vipach.at/en/privacy/): Banhalmi Norbert e.U. The [community](https://www.vipach.at/kapcsolat/impresszum) and [archive](https://exhibition.vipach.at/privacy/) have separate privacy notices. A shared email or founder does not establish a common controller.
+- [Institutional graph](https://business.vipach.at/institutional-relations.jsonld). [Hungarian entry](https://business.vipach.at/) · [English entry](https://business.vipach.at/en/) · [Austrian German entry](https://business.vipach.at/de-at/).
+
 Canonical site: https://business.vipach.at/
 
 VIPACH for Business is the business direction founded by Norbert Banhalmi. Norbert Banhalmi is primarily a photographer and visual positioning specialist: Executive Portraiture • Visual Branding Strategist • Helping leaders build a powerful professional presence. Digital entity building is handled by the VIPACH for Business team.
@@ -8,7 +19,7 @@ Core positioning:
 - Norbert Banhalmi: photographer, executive portraiture, visual branding, visual positioning, professional presence.
 - VIPACH for Business team: digital entity audit, strategic diagnosis, visual asset management, structured data and AI-readable brand architecture.
 - Market focus: Hungarian companies, founders and brands entering Austria, Germany, Switzerland, the wider DACH region and the US market.
-- Business context: official member of AmCham Austria; connected to the official WKO / Vienna Chamber of Commerce environment.
+- The commercial provider, Banhalmi Norbert e.U. / BANHALMI Photography, is associated with AmCham Austria and listed with WKO. This is not membership by the VIPACH creative community or its exhibition archive.
 - This indicates DACH and transatlantic business-community and chamber presence, not endorsement, partner status or certification.
 
 Entity map:
@@ -16,8 +27,8 @@ Entity map:
 - Legal provider: Banhalmi Norbert e.U. (trade name: BANHALMI Photography) — Wikidata Q138425941, UID/VAT ATU80445314.
 - Business direction: VIPACH for Business — founded by Norbert Banhalmi, execution by the VIPACH for Business team.
 - Related creative background: VIPACH | Vienna Photo Art & Creative HUB — Wikidata Q138416887. Not identical to VIPACH for Business.
-- Vienna office: Wikidata Q138426506, Schwedenplatz 2 / Laurenzerberg 5/I/8-9, 1010 Wien, Austria, phone +43 677 616 555 92.
-- Budapest office: Wikidata Q138830452, Lágymányosi u. 15, 1111 Budapest, Hungary, phone +36 70 469 83 97.
+- Business contact and registered address: Schwedenplatz 2 / Laurenzerberg 5/I/8–9, 1010 Wien, Austria, +43 677 616 555 92. BANHALMI Photography lists this as its 1010 Vienna studio and publishes its separate Vienna client meeting location on its own contact page.
+- Business Budapest contact: Lágymányosi u. 15, 1111 Budapest, Hungary, +36 70 469 83 97. The separate BANHALMI Photography site publishes its own studio contact details.
 
 Important boundaries:
 - VIPACH for Business is not a political campaign service.
