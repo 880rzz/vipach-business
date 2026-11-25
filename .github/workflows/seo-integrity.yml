@@ -16,3 +16,5 @@ jobs:
           node-version: '22'
       - name: Validate canonical, hreflang, JSON-LD and legacy privacy links
         run: node scripts/check-seo-integrity.mjs
+      - name: Validate multilingual Business entity, legal provider and public AI summaries
+        run: node scripts/check-business-identity.mjs
