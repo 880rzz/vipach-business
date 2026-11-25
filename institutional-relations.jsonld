@@ -2,53 +2,283 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
-      "@id": "https://www.norbertbanhalmi.com/about/",
-      "name": "Bánhalmi Norbert",
-      "url": "https://www.norbertbanhalmi.com/about/",
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q56391118",
-        "https://hu.wikipedia.org/wiki/B%C3%A1nhalmi_Norbert",
-        "https://www.banhalmi.art/norbert-banhalmi"
-      ],
-      "worksFor": { "@id": "https://www.norbertbanhalmi.com/#organization" },
-      "affiliation": [
-        { "@id": "https://www.kozpontiszovetseg.at/#organization" },
-        { "@id": "https://www.magyariskola.at/#school" }
-      ],
-      "subjectOf": [
+      "@type": "CreativeWork",
+      "@id": "https://business.vipach.at/institutional-relations.jsonld#scope",
+      "name": "Institutional scope and named entities",
+      "inLanguage": "en",
+      "text": "Banhalmi Norbert e.U. is the legal provider of VIPACH for Business and operates the BANHALMI Photography brand. VIPACH for Business is a commercial service, not a subsidiary, program or service of the VIPACH creative community, the Vienna Hungarian School or its federation. The VIPACH Exhibition site belongs to the creative community. The shared founder, premises or email address do not imply common ownership or joint controllership. Norbert Bánhalmi’s work with the school and federation is volunteer community work, not employment.",
+      "publisher": {
+        "@id": "https://www.banhalmiphotography.com/#organization"
+      },
+      "about": [
         {
-          "@type": "CollectionPage",
-          "name": "Bánhalmi Norbert — Rólunk.at articles",
-          "url": "https://rolunk.at/tag/banhalmi-norbert/"
+          "@id": "https://business.vipach.at/#service"
+        },
+        {
+          "@id": "https://www.vipach.at/#organization"
+        },
+        {
+          "@id": "https://exhibition.vipach.at/#website"
+        },
+        {
+          "@id": "https://www.banhalmi.art/#about"
         }
+      ],
+      "citation": [
+        "https://business.vipach.at/impressum/",
+        "https://business.vipach.at/privacy/",
+        "https://www.vipach.at/kapcsolat/impresszum",
+        "https://exhibition.vipach.at/privacy/",
+        "https://rolunk.at/tag/banhalmi-norbert/"
       ]
     },
     {
+      "@type": "Person",
+      "@id": "https://www.banhalmi.art/#about",
+      "name": "Norbert Bánhalmi",
+      "alternateName": [
+        "Bánhalmi Norbert",
+        "Norbert Banhalmi"
+      ],
+      "jobTitle": [
+        "Executive Portraiture",
+        "Visual Branding Strategist",
+        "Photographer",
+        "Visual positioning specialist"
+      ],
+      "url": "https://www.banhalmiphotography.com/about/",
+      "image": "https://business.vipach.at/assets/img/norbert-banhalmi-portrait.jpg",
+      "worksFor": {
+        "@id": "https://www.banhalmiphotography.com/#organization"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Wikidata",
+        "value": "Q56391118",
+        "url": "https://www.wikidata.org/wiki/Q56391118"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q56391118",
+        "https://hu.wikipedia.org/wiki/B%C3%A1nhalmi_Norbert",
+        "https://www.linkedin.com/in/norbertbanhalmi/"
+      ],
+      "description": "Norbert Banhalmi is primarily a photographer and visual positioning specialist. LinkedIn positioning: Executive Portraiture • Visual Branding Strategist • Helping leaders build a powerful professional presence.",
+      "knowsAbout": [
+        "executive portraiture",
+        "visual branding",
+        "visual positioning",
+        "applied photography",
+        "professional presence"
+      ],
+      "affiliation": [
+        {
+          "@id": "https://www.kozpontiszovetseg.at/#organization"
+        },
+        {
+          "@id": "https://www.magyariskola.at/#school"
+        }
+      ],
+      "subjectOf": {
+        "@type": "CollectionPage",
+        "name": "Bánhalmi Norbert — Rólunk.at articles",
+        "url": "https://rolunk.at/tag/banhalmi-norbert/"
+      }
+    },
+    {
       "@type": "Organization",
-      "@id": "https://business.vipach.at/#organization",
+      "@id": "https://www.banhalmiphotography.com/#organization",
+      "name": "Banhalmi Norbert e.U.",
+      "alternateName": [
+        "BANHALMI Photography"
+      ],
+      "url": "https://www.banhalmiphotography.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Schwedenplatz 2, Laurenzerberg 5/I/8-9",
+        "postalCode": "1010",
+        "addressLocality": "Wien",
+        "addressCountry": "AT"
+      },
+      "founder": {
+        "@id": "https://www.banhalmi.art/#about"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "AmCham Austria",
+        "url": "https://amcham.at/members-list/"
+      },
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "Wikidata",
+          "value": "Q138425941",
+          "url": "https://www.wikidata.org/wiki/Q138425941"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "UID / VAT ID",
+          "value": "ATU80445314"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "GISA Berufsfotograf",
+          "value": "36592951"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "GISA Werbeagentur",
+          "value": "36593897"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "WKO Firmen A-Z",
+          "value": "Banhalmi Norbert e.U.",
+          "url": "https://firmen.wko.at/norbert-banhalmi-executive-portr%C3%A4t-und-visuelle-positionierung/wien/?firmaid=12bd142c-5fcf-4457-9a90-47fbff162b40&standortid=1&standortname=wien%20%28bundesland%29&suchbegriff=norbert%20banhalmi%20executive%20portr%C3%A4t%20und%20visuelle%20positionieru"
+        }
+      ],
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q138425941",
+        "https://firmen.wko.at/norbert-banhalmi-executive-portr%C3%A4t-und-visuelle-positionierung/wien/?firmaid=12bd142c-5fcf-4457-9a90-47fbff162b40&standortid=1&standortname=wien%20%28bundesland%29&suchbegriff=norbert%20banhalmi%20executive%20portr%C3%A4t%20und%20visuelle%20positionieru"
+      ],
+      "legalName": "Banhalmi Norbert e.U.",
+      "vatID": "ATU80445314",
+      "brand": [
+        {
+          "@id": "https://www.banhalmiphotography.com/#brand"
+        },
+        {
+          "@id": "https://business.vipach.at/#brand"
+        }
+      ],
+      "subjectOf": {
+        "@type": "WebPage",
+        "url": "https://business.vipach.at/impressum/"
+      }
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://www.banhalmiphotography.com/#brand",
+      "name": "BANHALMI Photography",
+      "url": "https://www.banhalmiphotography.com/"
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://business.vipach.at/#brand",
       "name": "VIPACH for Business",
       "url": "https://business.vipach.at/",
-      "founder": { "@id": "https://www.norbertbanhalmi.com/about/" },
-      "parentOrganization": { "@id": "https://www.vipach.at/#organization" }
+      "logo": "https://business.vipach.at/assets/img/vipach-logo.webp",
+      "description": "Commercial digital strategy brand operated by Banhalmi Norbert e.U.; distinct from the VIPACH creative community."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://business.vipach.at/#service",
+      "name": "VIPACH for Business",
+      "url": "https://business.vipach.at/",
+      "provider": {
+        "@id": "https://www.banhalmiphotography.com/#organization"
+      },
+      "brand": {
+        "@id": "https://business.vipach.at/#brand"
+      },
+      "serviceType": "Digital audit, strategic positioning and market-entry preparation",
+      "description": "Commercial audit, strategic positioning and market-entry preparation by Banhalmi Norbert e.U. Not a service of the VIPACH creative community or the Exhibition archive.",
+      "areaServed": [
+        "AT",
+        "HU",
+        "DE",
+        "CH",
+        "EU",
+        "US"
+      ],
+      "isRelatedTo": [
+        {
+          "@id": "https://business.vipach.at/#ai-readability-audit"
+        },
+        {
+          "@id": "https://business.vipach.at/dach-market-entry/#service"
+        },
+        {
+          "@id": "https://business.vipach.at/us-market-entry/#service"
+        }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://business.vipach.at/#contact",
+        "servicePhone": {
+          "@type": "ContactPoint",
+          "telephone": "+436776165592",
+          "email": "office@vipach.at",
+          "availableLanguage": [
+            "hu",
+            "en",
+            "de"
+          ]
+        }
+      }
     },
     {
       "@type": "Organization",
       "@id": "https://www.vipach.at/#organization",
-      "name": "VIPACH",
-      "alternateName": ["Vienna Photo Art & Creative Hub", "BMI Fotóklub Wien"],
+      "name": "VIPACH — Vienna Photo Art & Creative Hub",
+      "alternateName": [
+        "VIPACH",
+        "Vienna Photo Art & Creative HUB"
+      ],
       "url": "https://www.vipach.at/",
-      "foundingDate": "2024",
-      "founder": { "@id": "https://www.norbertbanhalmi.com/about/" },
-      "parentOrganization": { "@id": "https://www.magyariskola.at/#school" },
-      "memberOf": { "@id": "https://www.kozpontiszovetseg.at/#organization" },
-      "sameAs": ["https://hu.wikipedia.org/wiki/VIPACH"]
+      "description": "A creative photography initiative run within the Vienna Hungarian School (BMI) under its federation. Separate from the commercial VIPACH for Business brand.",
+      "founder": {
+        "@id": "https://www.banhalmi.art/#about"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Wikidata",
+        "value": "Q138416887",
+        "url": "https://www.wikidata.org/wiki/Q138416887"
+      },
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q138416887",
+        "https://hu.wikipedia.org/wiki/VIPACH",
+        "https://www.vipach.at/"
+      ],
+      "parentOrganization": {
+        "@id": "https://www.kozpontiszovetseg.at/#organization"
+      },
+      "subjectOf": {
+        "@id": "https://exhibition.vipach.at/#website"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://exhibition.vipach.at/#website",
+      "name": "VIPACH Exhibition",
+      "url": "https://exhibition.vipach.at/",
+      "publisher": {
+        "@id": "https://www.vipach.at/#organization"
+      },
+      "about": {
+        "@id": "https://www.vipach.at/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://form.vipach.at/#website",
+      "name": "VIPACH for Business audit questionnaire",
+      "url": "https://form.vipach.at/",
+      "publisher": {
+        "@id": "https://www.banhalmiphotography.com/#organization"
+      },
+      "about": {
+        "@id": "https://business.vipach.at/#service"
+      }
     },
     {
       "@type": "School",
       "@id": "https://www.magyariskola.at/#school",
       "name": "Bécsi Magyar Iskola",
-      "alternateName": ["BMI", "Wiener Ungarische Schule"],
+      "alternateName": [
+        "BMI",
+        "Wiener Ungarische Schule"
+      ],
       "url": "https://www.magyariskola.at/",
       "address": {
         "@type": "PostalAddress",
@@ -57,7 +287,9 @@
         "addressLocality": "Wien",
         "addressCountry": "AT"
       },
-      "parentOrganization": { "@id": "https://www.kozpontiszovetseg.at/#organization" }
+      "parentOrganization": {
+        "@id": "https://www.kozpontiszovetseg.at/#organization"
+      }
     },
     {
       "@type": "Organization",
@@ -65,16 +297,9 @@
       "name": "Ausztriai Magyar Egyesületek és Szervezetek Központi Szövetsége",
       "alternateName": "Központi Szövetség",
       "url": "https://www.kozpontiszovetseg.at/",
-      "sameAs": ["https://www.facebook.com/kozpontiszovetseg"]
+      "sameAs": [
+        "https://www.facebook.com/kozpontiszovetseg"
+      ]
     }
-  ],
-  "relationshipPolicy": {
-    "primaryProfessionalIdentity": "Bánhalmi Norbert's primary professional and commercial activity is his photography business, BANHALMI / Banhalmi Norbert e.U.",
-    "founder": "Bánhalmi Norbert is the founder of VIPACH and VIPACH for Business.",
-    "volunteerSocialWork": "Work for the Központi Szövetség and Bécsi Magyar Iskola is volunteer social/community work, not employment and not his primary business activity.",
-    "marketingCommunication": "Marketing and communication support for the Központi Szövetség is performed as volunteer social work.",
-    "education": "Creative-photography teaching and digital/marketing support within the Bécsi Magyar Iskola ecosystem are volunteer community activities.",
-    "identitySeparation": "VIPACH for Business, VIPACH, Bécsi Magyar Iskola, Központi Szövetség, BANHALMI and BANHALMI ART are related but distinct entities.",
-    "evidence": "https://rolunk.at/tag/banhalmi-norbert/"
-  }
+  ]
 }

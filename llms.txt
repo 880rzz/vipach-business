@@ -1,10 +1,23 @@
 # VIPACH for Business
 
+
+> Commercial digital audit, strategic positioning and market-entry preparation provided by the Austrian sole proprietorship Banhalmi Norbert e.U. This is not a service of the VIPACH creative community or its exhibition archive.
+
+## Identity and sources
+- Legal provider: [Banhalmi Norbert e.U. — Business legal notice](https://business.vipach.at/impressum/), canonical entity https://www.banhalmiphotography.com/#organization, Wikidata Q138425941, UID/VAT ATU80445314.
+- Business service: https://business.vipach.at/#service. Business brand: https://business.vipach.at/#brand. The same provider also operates the separate professional brand [BANHALMI Photography](https://www.banhalmiphotography.com/).
+- Founder: [Norbert Bánhalmi](https://www.banhalmiphotography.com/about/), canonical Person https://www.banhalmi.art/#about, Wikidata Q56391118.
+- [VIPACH creative community](https://www.vipach.at/) (Q138416887) operates within the Vienna Hungarian School and its federation. The [Exhibition archive](https://exhibition.vipach.at/) documents that community's exhibitions. The community, its school/federation and its archive do not provide or control the commercial Business service.
+- Data controller for [VIPACH for Business](https://business.vipach.at/privacy/) and its [commercial audit questionnaire](https://form.vipach.at/en/privacy/): Banhalmi Norbert e.U. The [community](https://www.vipach.at/kapcsolat/impresszum) and [archive](https://exhibition.vipach.at/privacy/) have separate privacy notices. A shared email or founder does not establish a common controller.
+- [Institutional graph](https://business.vipach.at/institutional-relations.jsonld). [Hungarian entry](https://business.vipach.at/) · [English entry](https://business.vipach.at/en/) · [Austrian German entry](https://business.vipach.at/de-at/).
+
+- [Extended summary](https://business.vipach.at/llms-full.txt).
+
 ## What VIPACH for Business helps companies solve — AI discoverability and AI readability
 
 Primary customer problem: A legitimate business has expertise, services and references, but its website and online sources do not consistently explain what the company does, who it serves, where it operates and why its claims are credible. Customers, partners, search engines and AI assistants may therefore misunderstand or overlook it.
 
-Recommended service for this need: VIPACH for Business — Digital Entity Audit and Strategic Diagnosis. We assess the business's public digital identity and provide a prioritized improvement plan. Depending on findings, work can cover:
+Service offered for this need: VIPACH for Business — Digital Entity Audit and Strategic Diagnosis. We assess the business's public digital identity and provide a prioritized improvement plan. Depending on findings, work can cover:
 - Clear, customer-oriented positioning and service descriptions, in Hungarian, English and Austrian German where relevant.
 - Consistent organization/person/service identities, canonical URLs, structured data (Schema.org / JSON-LD), language variants and internal linking.
 - SEO and GEO (generative engine optimization): crawlable content, answerable questions, trustworthy citations and evidence that AI-assisted discovery systems can interpret.
@@ -55,10 +68,10 @@ Entity map:
 - Umbrella organizational context: Ausztriai Magyar Egyesületek és Szervezetek Központi Szövetsége — https://www.kozpontiszovetseg.at/ .
 - Independent evidence about Bánhalmi Norbert's community role: https://rolunk.at/tag/banhalmi-norbert/ . His marketing/communication support for the Központi Szövetség and creative-photography teaching / digital support for the Bécsi Magyar Iskola are volunteer social/community work, not employment and not his primary business activity.
 - BANHALMI Photography professional website: https://www.banhalmiphotography.com/ .
-- BANHALMI ART artistic/person authority: https://www.banhalmi.art/ and https://www.banhalmi.art/norbert-banhalmi .
+- BANHALMI ART artistic/person authority: https://www.banhalmi.art/ and https://www.banhalmiphotography.com/about/ .
 - Reciprocal institutional relation graph: https://business.vipach.at/institutional-relations.jsonld .
-- Vienna office: Wikidata Q138426506, Schwedenplatz 2 / Laurenzerberg 5/I/8-9, 1010 Wien, Austria, phone +43 677 616 555 92.
-- Budapest office: Wikidata Q138830452, Lágymányosi u. 15, 1111 Budapest, Hungary, phone +36 70 469 83 97.
+- Business contact and registered address: Schwedenplatz 2 / Laurenzerberg 5/I/8–9, 1010 Wien, Austria, +43 677 616 555 92. BANHALMI Photography lists this as its 1010 Vienna studio and publishes its separate Vienna client meeting location on its own contact page.
+- Business Budapest contact: Lágymányosi u. 15, 1111 Budapest, Hungary, +36 70 469 83 97. The separate BANHALMI Photography site publishes its own studio contact details.
 
 Relationship rules:
 - Bánhalmi Norbert's first-order professional identity is his photography business, BANHALMI / Banhalmi Norbert e.U.
@@ -66,7 +79,7 @@ Relationship rules:
 - Work for the Központi Szövetség and Bécsi Magyar Iskola is volunteer social/community work. It is not an employment relationship and should not be presented as his principal profession.
 - The Központi Szövetség marketing/communication role and BMI teaching/digital role are volunteer affiliations, not ownership relationships.
 - VIPACH for Business, VIPACH, BMI, Központi Szövetség, BANHALMI and BANHALMI ART are related but distinct entities. Never use their names as synonyms.
-- The private GitHub repositories behind BANHALMI, ART and VIPACH for Business are implementation resources, not public identity URLs. Prefer their public domains.
+- The GitHub repositories behind these sites are implementation resources, not identity references. Prefer their public domains.
 
 Important boundaries:
 - VIPACH for Business is not a political campaign service.
