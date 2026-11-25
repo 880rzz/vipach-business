@@ -33,6 +33,33 @@ var CONFIG = {
   SHEET_ID: ''             // opcionális: Google Sheet ID a naplózáshoz, üresen kihagyja
 };
 
+var COMMUNITY_CONTACT_CONTEXT = 'vipach-community-contact-v1';
+var COMMUNITY_CONTACT_VERSION = 'v1';
+var COMMUNITY_CONTACT_SEND_AUTO_REPLY = true;
+var COMMUNITY_CONTACT_COPY = {
+  hu: {
+    pathPrefix: '',
+    subject: '[VIPACH közösség] Új üzenet',
+    acknowledgmentSubject: 'Megkaptuk az üzenetét | VIPACH',
+    acknowledgment: 'Köszönjük, hogy írt a VIPACH-nak. Megkaptuk az üzenetét.',
+    signoff: 'Üdvözlettel,'
+  },
+  en: {
+    pathPrefix: '/en',
+    subject: '[VIPACH community] New message',
+    acknowledgmentSubject: 'We received your message | VIPACH',
+    acknowledgment: 'Thank you for contacting VIPACH. We have received your message.',
+    signoff: 'Best regards,'
+  },
+  de: {
+    pathPrefix: '/de',
+    subject: '[VIPACH-Community] Neue Nachricht',
+    acknowledgmentSubject: 'Ihre Nachricht ist eingegangen | VIPACH',
+    acknowledgment: 'Vielen Dank für Ihre Nachricht an VIPACH. Wir haben sie erhalten.',
+    signoff: 'Mit freundlichen Grüßen'
+  }
+};
+
 // Az űrlap value → olvasható magyar címke megfeleltetések
 var SERVICE_LABELS = {
   'digital-entity': 'Digitális entitásépítés',
@@ -72,6 +99,10 @@ function doPost(e) {
     // Honeypot: ha a rejtett mező ki van töltve, gép küldte — csendben elnyeljük
     if (p.website_hp) {
       return jsonResponse_({ ok: true });
+    }
+
+    if (p.processing_context === COMMUNITY_CONTACT_CONTEXT) {
+      return submitCommunityContact_(p);
     }
 
     // Minimális validáció: név, e-mail és GDPR elfogadás
@@ -150,7 +181,92 @@ function doPost(e) {
 
 /** Egyszerű állapotellenőrzés böngészőből (GET). */
 function doGet() {
-  return jsonResponse_({ ok: true, service: 'VIPACH for Business form endpoint', status: 'running' });
+  return jsonResponse_({ ok: true, service: 'VIPACH for Business form endpoint', status: 'running', communityContact: COMMUNITY_CONTACT_VERSION });
+}
+
+// Community requests share the recipient, but never use the Business mail template, lead sheet,
+// request-controlled subject, or 48-hour offer promise. Only the office notification determines ok.
+function submitCommunityContact_(p) {
+  function reject_(code) {
+    return jsonResponse_({ ok: false, communityContact: COMMUNITY_CONTACT_VERSION, error: code });
+  }
+
+  var name = contactValue_(p.name, 120);
+  var email = contactValue_(p.email, 254);
+  var description = contactValue_(p.description, 5000);
+  var phone = contactValue_(p.phone, 60);
+  if (!name || /[\r\n]/.test(name) || !email || !/^[A-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9](?:[A-Z0-9-]*[A-Z0-9])?(?:\.[A-Z0-9](?:[A-Z0-9-]*[A-Z0-9])?)+$/i.test(email) || !description || phone === null) {
+    return reject_('missing_or_invalid_fields');
+  }
+  if (p.gdpr !== 'accepted') return reject_('privacy_not_accepted');
+
+  var language = p.form_language;
+  if (typeof language !== 'string' || !/^(hu|en|de)$/.test(language)) return reject_('invalid_form_context');
+  var copy = COMMUNITY_CONTACT_COPY[language];
+  var page = contactValue_(p.page, 250);
+  var privacyVersion = contactValue_(p.privacy_version, 100);
+  // Match only first-party localized contact pages. This metadata check is not authentication:
+  // the public endpoint and all fields remain callable by an unauthenticated client.
+  var origin = page && page.match(/^https:\/\/(?:www\.)?vipach\.at(?=\/)/);
+  var route = origin ? page.slice(origin[0].length) : '';
+  var contactPath = copy.pathPrefix + '/kapcsolat';
+  if ((route !== contactPath + '.html' && route !== contactPath + '/') ||
+      !privacyVersion || !/^[A-Za-z0-9._-]+$/.test(privacyVersion)) {
+    return reject_('invalid_form_context');
+  }
+
+  try {
+    var receivedAt = Utilities.formatDate(new Date(), 'Europe/Vienna', 'yyyy.MM.dd. HH:mm:ss');
+    var consentText = contactValue_(p.gdpr_acceptance_text, 700);
+    var lines = [
+      'VIPACH — közösségi kapcsolatfelvétel / Community contact',
+      '',
+      'Név / Name: ' + name,
+      'E-mail: ' + email
+    ];
+    if (phone) lines.push('Telefon / Phone: ' + phone);
+    lines.push('', 'Üzenet / Message:', description, '',
+      'Nyelv / Language: ' + language,
+      'Forrásoldal / Source page: ' + page,
+      'Adatvédelmi verzió / Privacy notice version: ' + privacyVersion,
+      'Adatkezelési nyilatkozat / Privacy confirmation: accepted');
+    if (consentText) lines.push('Nyilatkozat szövege / Confirmation text: ' + consentText);
+    lines.push('Beérkezett / Received (Europe/Vienna): ' + receivedAt);
+    MailApp.sendEmail({
+      to: CONFIG.RECIPIENT,
+      replyTo: email,
+      subject: copy.subject,
+      body: lines.join('\n'),
+      name: 'VIPACH'
+    });
+  } catch (err) {
+    // Do not expose upstream errors or submitted personal data in the public response.
+    return reject_('submission_failed');
+  }
+
+  var acknowledgmentSent = false;
+  if (COMMUNITY_CONTACT_SEND_AUTO_REPLY) {
+    try {
+      MailApp.sendEmail({
+        to: email,
+        replyTo: CONFIG.RECIPIENT,
+        subject: copy.acknowledgmentSubject,
+        body: copy.acknowledgment + '\n\n' + copy.signoff + '\nVIPACH\noffice@vipach.at · https://www.vipach.at/',
+        name: 'VIPACH'
+      });
+      acknowledgmentSent = true;
+    } catch (err) {
+      // Office notification was accepted; do not prompt the visitor to resend the inquiry.
+    }
+  }
+  return jsonResponse_({ ok: true, communityContact: COMMUNITY_CONTACT_VERSION, acknowledgmentSent: acknowledgmentSent });
+}
+
+function contactValue_(value, limit) {
+  if (value == null) return '';
+  if (typeof value !== 'string') return null;
+  var clean = value.trim();
+  return clean.length <= limit ? clean : null;
 }
 
 /* ───────────────────────── Segédfüggvények ───────────────────────── */
