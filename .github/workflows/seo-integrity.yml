@@ -18,3 +18,5 @@ jobs:
         run: node scripts/check-seo-integrity.mjs
       - name: Validate multilingual Business entity, legal provider and public AI summaries
         run: node scripts/check-business-identity.mjs
+      - name: Verify Business analytics choice and withdrawal without network requests
+        run: node scripts/check-analytics-withdrawal.mjs
