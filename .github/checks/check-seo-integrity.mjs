@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Run: node scripts/check-seo-integrity.mjs
+// Run: node .github/checks/check-seo-integrity.mjs
 import fs from 'node:fs';
 const base = 'https://business.vipach.at';
 const groups = [

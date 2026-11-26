@@ -16,7 +16,7 @@ const fixed = [
   'google680262c7a4c98e0e.html', 'institutional-relations.jsonld', 'llms.txt', 'llms-full.txt',
   'assets/audit-prompt-builder.js', 'assets/craft.css', 'assets/executive-heading-scale.css',
   'assets/executive-heading-scale.js', 'assets/site.js', 'assets/typography-refinement.css',
-  'assets/vipach-contact.js', 'assets/whatsapp-fab.js', 'assets/og-image.jpg',
+  'assets/og-image.jpg',
 ];
 const redirects = ['sent/index.html', 'en/sent/index.html', 'de-at/sent/index.html'];
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
