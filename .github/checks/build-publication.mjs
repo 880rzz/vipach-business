@@ -3,10 +3,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const origin = 'https://business.vipach.at';
 const target = process.argv[2];
-assert.ok(target, 'Usage: node scripts/build-publication.mjs <new output directory>');
+assert.ok(target, 'Usage: node .github/checks/build-publication.mjs <new output directory>');
 const output = path.resolve(target);
 assert.ok(!fs.existsSync(output), 'Output must not already exist');
 

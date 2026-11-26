@@ -15,14 +15,14 @@ jobs:
         with:
           node-version: '22'
       - name: Validate canonical, hreflang, JSON-LD and legacy privacy links
-        run: node scripts/check-seo-integrity.mjs
+        run: node .github/checks/check-seo-integrity.mjs
       - name: Validate multilingual Business entity, legal provider and public AI summaries
-        run: node scripts/check-business-identity.mjs
+        run: node .github/checks/check-business-identity.mjs
       - name: Verify Business analytics choice and withdrawal without network requests
-        run: node scripts/check-analytics-withdrawal.mjs
+        run: node .github/checks/check-analytics-withdrawal.mjs
       - name: Verify multilingual problem, solution, deliverables and project origin
-        run: node scripts/check-business-proposition.mjs
+        run: node .github/checks/check-business-proposition.mjs
       - name: Verify shared editorial layout across the localized Business pages
-        run: node scripts/check-editorial-layout.mjs
+        run: node .github/checks/check-editorial-layout.mjs
       - name: Verify allowlisted website artifact
-        run: node scripts/build-publication.mjs "${RUNNER_TEMP}/vipach-business-public"
+        run: node .github/checks/build-publication.mjs "${RUNNER_TEMP}/vipach-business-public"
