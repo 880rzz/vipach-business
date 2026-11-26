@@ -1,7 +1,17 @@
 /* VIPACH GA4 – external tag loads only after explicit, page-scoped consent. */
 (function () {
   "use strict";
+  if (location.hostname !== "business.vipach.at") return;
   var id = "G-QKLWTP62ZJ";
+  var cookiePrefix = "vipach_biz";
+  var cookiePath = "/";
+  var clientCookie = cookiePrefix + "_ga";
+  var streamCookie = clientCookie + "_" + id.slice(2);
+  function clearBusinessAnalyticsCookies() {
+    // Match only the two new GA cookies. Omitting Domain leaves parent/site cookies alone.
+    document.cookie = clientCookie + "=; Max-Age=0; Path=" + cookiePath + "; Secure";
+    document.cookie = streamCookie + "=; Max-Age=0; Path=" + cookiePath + "; Secure";
+  }
   var lang = document.documentElement.lang.toLowerCase();
   lang = lang.indexOf("de") === 0 ? "de" : lang.indexOf("en") === 0 ? "en" : "hu";
   var copy = {
@@ -29,6 +39,10 @@
     try { if (document.referrer) { var u = new URL(document.referrer); referrer = u.origin + u.pathname; } } catch (_) {}
     window.gtag("js", new Date());
     window.gtag("config", id, {
+      // Google treats "none" as no Domain attribute: the browser binds storage to this exact host.
+      cookie_domain: "none",
+      cookie_prefix: cookiePrefix,
+      cookie_path: cookiePath,
       page_location: location.origin + location.pathname,
       page_referrer: referrer,
       allow_google_signals: false,
@@ -37,6 +51,10 @@
     var tag = document.createElement("script");
     tag.async = true;
     tag.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+    tag.addEventListener("load", function () {
+      // Withdrawal may have happened while the consented script was still loading.
+      if (!enabled) clearBusinessAnalyticsCookies();
+    }, { once: true });
     document.head.appendChild(tag);
   }
   function mount() {
@@ -87,6 +105,7 @@
     deny.addEventListener("click", function () {
       window[block] = true;
       enabled = false;
+      clearBusinessAnalyticsCookies();
       close();
     });
     actions.appendChild(allow);
