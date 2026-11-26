@@ -5,12 +5,24 @@ const routes = [...fs.readFileSync('sitemap.xml','utf8').matchAll(/<loc>https:\/
 assert.equal(routes.length,18,'all three languages for every public page family');
 const css = fs.readFileSync('assets/craft.css', 'utf8');
 assert.match(css, /--media-corner:5px/);
+assert.match(css, /#main-content\{scroll-margin-block-start:96px\}/);
 assert.match(css, /body :is\(img,video\)\{border-radius:var\(--media-corner\)!important\}/);
 assert.match(css, /main > section \+ section\{border-block-start:1px solid/);
 assert.match(css, /main\.section\.white > \.narrow > h1\{font-size:clamp\(26px,5vw,43px\)/);
 for (const route of routes) {
   const html = fs.readFileSync(route, 'utf8');
-  assert.equal((html.match(/href="\/assets\/craft\.css\?v=clear-offer-20261126"/g)||[]).length,1,route);
+  const hasNav=/<nav\b[^>]*class="nav"/.test(html);
+  const cssVersion=hasNav ? 'keyboard-main-20261126' : 'clear-offer-20261126';
+  assert.equal((html.match(new RegExp('href="/assets/craft[.]css[?]v='+cssVersion+'"','g'))||[]).length,1,route);
+  if (hasNav) {
+    const locale=html.match(/<html lang="([^"]+)"/)?.[1];
+    const label=({hu:'Ugrás a fő tartalomra',en:'Skip to main content','de-AT':'Zum Hauptinhalt springen'})[locale];
+    assert.ok(label,route+' expected skip-link locale');
+    assert.match(html,new RegExp('<body[^>]*>\\s*<a class="skip" href="#main-content">'+label+'</a>'),route+' first control bypasses shared navigation');
+    assert.equal((html.match(/<main id="main-content" tabindex="-1">/g)||[]).length,1,route+' one native focusable main');
+  } else {
+    assert.doesNotMatch(html,/class="skip"/,route+' no redundant shortcut without repeated navigation');
+  }
   if (/^(?:de-at\/|en\/)?index\.html$/.test(route)) {
     const links = html.match(/<span class="privacy-note-links">([\s\S]*?)<\/span>/)?.[1];
     assert.equal((links?.match(/<a\b/g)||[]).length,2,route+' two distinct links in the notice');
