@@ -1201,3 +1201,26 @@ h2{
     -webkit-text-fill-color:currentColor;
   }
 }
+/* Shared reading rhythm, media corners and narrow-screen fixes for all Business pages. */
+:root{--media-corner:5px;--editorial-rule:#dedee3}
+body :is(img,video){border-radius:var(--media-corner)!important}
+.hero-media-bg,.hero-media-overlay{border-radius:var(--media-corner)}
+.hero-media-bg{overflow:hidden}
+.about-apple-layout .apple-portrait picture,.case-figure picture{border-radius:var(--media-corner)}
+.case-figure{border-radius:var(--media-corner)}
+main > section + section{border-block-start:1px solid var(--editorial-rule)}
+main > section.dark{border-block-start-color:transparent}
+main > section.narrow{padding-block:clamp(32px,5vw,64px)}
+.section-head > :is(h1,h2) + p,.text-panel > h2 + :is(p,ul,dl){margin-block-start:.7em}
+.section-head > p + p,.text-panel > p + p{margin-block-start:.8em}
+#problem-and-solution dl{margin-block:1.3em}
+#problem-and-solution dd{margin:0}
+#problem-and-solution dd > p{margin-block:.28em 1em}
+#problem-and-solution dt:not(:first-child){border-block-start:1px solid var(--editorial-rule);padding-block-start:.8em}
+:is(.hero,main) :is(h1,h2,h3){overflow-wrap:anywhere}
+main.section.white > .narrow > h1{font-size:clamp(26px,5vw,43px)!important;line-height:1.2!important;letter-spacing:-.025em!important;hyphens:auto}
+:is(.about-portrait,.case-figure) .media-license{display:block;width:fit-content;margin-block-start:.3em}
+.privacy-note-links{display:grid;gap:.35em;margin-block-start:.45em}
+.privacy-note-links > a{justify-self:start;overflow-wrap:anywhere}
+.footer-executive .footer-list-dense .footer-location{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:.35em;row-gap:.2em}
+.footer-location > a:last-child{flex-basis:100%;min-width:0}

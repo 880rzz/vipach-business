@@ -22,3 +22,5 @@ jobs:
         run: node scripts/check-analytics-withdrawal.mjs
       - name: Verify multilingual problem, solution, deliverables and project origin
         run: node scripts/check-business-proposition.mjs
+      - name: Verify shared editorial layout across the localized Business pages
+        run: node scripts/check-editorial-layout.mjs
