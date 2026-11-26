@@ -17,7 +17,19 @@ for(const l of locales){
  const u=home.match(/<section[^>]+id="problem-and-solution"[^>]*>[\s\S]*?<\/section>/)?.[0];
  assert.ok(u,file+' plain problem/solution section');
  assert.equal((u.match(/<dt>/g)||[]).length,3,file);
- assert.ok(u.includes('href="#diagnosis"')&&home.includes('id="diagnosis"'),file+' exact first-step anchor');
+ assert.match(u,/class="delivery-list"/,file+' concrete ordered deliverable');
+ assert.doesNotMatch(home,/data-vipach-contact|vipach-contact\.js|whatsapp-fab\.js/,file+' no overlapping contact widget');
+ const ids=[...home.matchAll(/\bid="([^"]+)"/g)].map(([,id])=>id);
+ assert.equal(ids.length,new Set(ids).size,file+' IDs must be unique');
+ for(const [,href] of home.matchAll(/\bhref="#([^"]+)"/g)) assert.ok(ids.includes(href),file+' missing anchor '+href);
+ const method=home.indexOf('<details class="method-disclosure">');
+ assert.ok(home.indexOf('id="problem-and-solution"')<home.indexOf('id="project-origins"')&&home.indexOf('id="project-origins"')<home.indexOf('id="contact"')&&home.indexOf('id="contact"')<method,file+' document order: deliverable, evidence, consultation, detail');
+ for(const id of ['audit','diagnosis','self-audit','meaning','ai-footprint','ai-explained','offline-strategy','practical-questions','timeline','value','fit']) assert.ok(home.indexOf('id="'+id+'"')>method,file+' older deep link '+id);
+ for(const prefix of ['https://firmen.wko.at/','https://amcham.at/members-list/']) {
+   const evidence=home.slice(home.indexOf('id="project-origins"'),home.indexOf('id="contact"'));
+   assert.ok(evidence.includes('href="'+prefix),file+' public evidence '+prefix);
+ }
+
  for(const page of [home,about]){
   const project=page.match(/<section[^>]+id="project-origins"[^>]*>[\s\S]*?<\/section>/)?.[0];
   assert.ok(project?.includes('BANHALMI × VIPACH × BE SMART KIDS CLUB'),file+' public project origin');

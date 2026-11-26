@@ -225,7 +225,7 @@
         "Vienna Photo Art & Creative HUB"
       ],
       "url": "https://vipach.at/",
-      "description": "A creative photography initiative run within the Vienna Hungarian School (BMI) under its federation. Separate from the commercial VIPACH for Business brand.",
+      "description": "A photography community that works with the Vienna Hungarian School (BMI) and is affiliated with the Central Federation. Separate from VIPACH for Business.",
       "founder": {
         "@id": "https://www.banhalmi.art/#about"
       },
@@ -240,11 +240,11 @@
         "https://hu.wikipedia.org/wiki/VIPACH",
         "https://vipach.at/"
       ],
-      "parentOrganization": {
-        "@id": "https://www.kozpontiszovetseg.at/#organization"
-      },
       "subjectOf": {
         "@id": "https://exhibition.vipach.at/#website"
+      },
+      "memberOf": {
+        "@id": "https://www.kozpontiszovetseg.at/#organization"
       }
     },
     {

@@ -178,3 +178,20 @@
     });
   });
 })();
+
+/* Older bookmarks must still reach sections that now live in the optional audit details. */
+(() => {
+  function openMethod() {
+    const hash = location.hash.slice(1);
+    if (!hash) return;
+    let id;
+    try { id = decodeURIComponent(hash); } catch { return; }
+    const target = document.getElementById(id);
+    const details = target?.closest('.method-disclosure');
+    if (!details || details.open) return;
+    details.open = true;
+    requestAnimationFrame(() => target.scrollIntoView({block: 'start', behavior: 'instant'}));
+  }
+  openMethod();
+  window.addEventListener('hashchange', openMethod);
+})();

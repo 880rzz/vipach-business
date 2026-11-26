@@ -68,7 +68,8 @@ for (const href of routes) {
     assert.equal(lookup.get(person)['@type'], 'Person');
     assert.equal(lookup.get(archive).publisher['@id'], community);
     assert.equal(page.mainEntity['@id'], homepage ? audit : service);
-    assert.equal(lookup.get(community).parentOrganization['@id'], 'https://www.kozpontiszovetseg.at/#organization');
+    assert.equal(lookup.get(community).memberOf['@id'], 'https://www.kozpontiszovetseg.at/#organization');
+    assert(!lookup.get(community).parentOrganization, f + ': Club affiliation does not imply legal parentage');
     assert(!lookup.get(person).founder, f + ': founder only on organization');
   }
   if (homepage) {
@@ -91,6 +92,8 @@ for (const href of routes) {
 const institution = inspectGraph(JSON.parse(fs.readFileSync('institutional-relations.jsonld', 'utf8')), 'institutional graph');
 assert.equal(institution.get(service).provider['@id'], professional);
 assert.equal(institution.get(archive).publisher['@id'], community);
+assert.equal(institution.get(community).memberOf['@id'], 'https://www.kozpontiszovetseg.at/#organization');
+assert(!institution.get(community).parentOrganization);
 assert.equal(institution.get(professional).legalName, 'Banhalmi Norbert e.U.');
 assert(!institution.get(brand).parentOrganization);
 for (const f of ['llms.txt', 'llms-full.txt']) {
