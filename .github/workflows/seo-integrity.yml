@@ -24,3 +24,5 @@ jobs:
         run: node scripts/check-business-proposition.mjs
       - name: Verify shared editorial layout across the localized Business pages
         run: node scripts/check-editorial-layout.mjs
+      - name: Verify allowlisted website artifact
+        run: node scripts/build-publication.mjs "${RUNNER_TEMP}/vipach-business-public"

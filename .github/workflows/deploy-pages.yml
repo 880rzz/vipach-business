@@ -19,10 +19,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build public website artifact
+        run: node scripts/build-publication.mjs "${RUNNER_TEMP}/vipach-business-public"
       - name: Upload static website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ${{ runner.temp }}/vipach-business-public
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
