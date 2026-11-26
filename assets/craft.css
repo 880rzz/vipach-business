@@ -1224,3 +1224,57 @@ main.section.white > .narrow > h1{font-size:clamp(26px,5vw,43px)!important;line-
 .privacy-note-links > a{justify-self:start;overflow-wrap:anywhere}
 .footer-executive .footer-list-dense .footer-location{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:.35em;row-gap:.2em}
 .footer-location > a:last-child{flex-basis:100%;min-width:0}
+
+/* Business entry: one primary action; a plainly marked route to the audit details. */
+.hero-media .btn.primary{border-radius:5px}
+.hero-media .hero-details-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.35rem;
+  align-self:center;
+  min-height:44px;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+}
+.hero-media .hero-details-link:is(:hover,:focus-visible){color:#fff}
+.hero-media .hero-details-link:is(:hover,:focus-visible) svg{transform:translateY(2px)}
+.hero-media .hero-details-link:focus-visible{outline:2px solid currentColor;outline-offset:4px;border-radius:5px}
+@media(max-width:680px){
+  .hero-media .hero-content{padding-inline:0}
+  .hero-media .actions{row-gap:2px}
+}
+
+/* Vector marker stays identifiable without colour, emoji fonts or underlining. */
+.footer-executive .external-link-icon{
+  display:inline-block;
+  vertical-align:-.15em;
+  margin-inline-start:.28em;
+}
+.footer-executive .footer-contact-plain :is(.footer-contact-line,.footer-office-line){
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:5px 7px;
+  margin-top:7px;
+}
+.footer-executive :is(.footer-contact-plain,.footer-list-dense) a:is([href^="mailto:"],[href^="tel:"]),
+.footer-executive .footer-contact-plain .footer-office-line a{
+  display:inline-block;
+  max-width:100%;
+  padding:4px 8px;
+  border:1px solid #7b8797;
+  border-radius:5px;
+  color:var(--ink2);
+  text-decoration:none;
+}
+.footer-executive :is(.footer-contact-plain,.footer-list-dense) a:is([href^="mailto:"],[href^="tel:"]):hover,
+.footer-executive .footer-contact-plain .footer-office-line a:hover{
+  border-color:currentColor;
+  color:var(--blue);
+}
+.footer-executive :is(.footer-contact-plain,.footer-list-dense) a:focus-visible{
+  outline:2px solid currentColor;
+  outline-offset:2px;
+}

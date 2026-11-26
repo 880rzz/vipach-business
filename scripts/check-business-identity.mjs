@@ -79,7 +79,7 @@ for (const href of routes) {
   }
   if (about || route.endsWith('/impressum/')) {
     assert.match(t, /id="provider-scope"/);
-    for (const h of ['https://www.banhalmiphotography.com/', 'https://www.vipach.at/', 'https://exhibition.vipach.at/']) {
+    for (const h of ['https://www.banhalmiphotography.com/', 'https://vipach.at/', 'https://exhibition.vipach.at/']) {
       assert(t.includes('href="' + h + '"'), f + ': cross-site scope link');
     }
   }
@@ -95,7 +95,7 @@ assert.equal(institution.get(professional).legalName, 'Banhalmi Norbert e.U.');
 assert(!institution.get(brand).parentOrganization);
 for (const f of ['llms.txt', 'llms-full.txt']) {
   const t = fs.readFileSync(f, 'utf8');
-  for (const id of [professional, person, service, brand, 'https://exhibition.vipach.at/privacy/', 'https://www.vipach.at/kapcsolat/impresszum']) {
+  for (const id of [professional, person, service, brand, 'https://exhibition.vipach.at/privacy/', 'https://vipach.at/adatvedelem.html']) {
     assert(t.includes(id), f + ': identity or controller evidence missing');
   }
 }

@@ -179,3 +179,9 @@ main h3{font-size:clamp(19px,1.8vw,23px);line-height:1.3;letter-spacing:-.015em;
 .ai-explained-actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}
 .ai-explained-note{font-size:13px;color:#626268}
 @media(max-width:720px){.ai-explained-grid{grid-template-columns:1fr;padding:0 18px}.ai-explained-grid article{padding:20px}.ai-explained-actions{flex-direction:column}.ai-explained-actions .btn{width:100%;box-sizing:border-box;text-align:center}}
+
+/* Keep the public-information question and consultation button within a compact mobile entry. */
+@media(max-width:520px){
+ .hero-media{padding-block:42px 30px}
+ .hero-media .lead{margin-block:12px 18px}
+}

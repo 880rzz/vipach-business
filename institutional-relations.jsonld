@@ -27,7 +27,7 @@
       "citation": [
         "https://business.vipach.at/impressum/",
         "https://business.vipach.at/privacy/",
-        "https://www.vipach.at/kapcsolat/impresszum",
+        "https://vipach.at/impresszum.html",
         "https://exhibition.vipach.at/privacy/",
         "https://rolunk.at/tag/banhalmi-norbert/"
       ]
@@ -224,7 +224,7 @@
         "VIPACH",
         "Vienna Photo Art & Creative HUB"
       ],
-      "url": "https://www.vipach.at/",
+      "url": "https://vipach.at/",
       "description": "A creative photography initiative run within the Vienna Hungarian School (BMI) under its federation. Separate from the commercial VIPACH for Business brand.",
       "founder": {
         "@id": "https://www.banhalmi.art/#about"
@@ -238,7 +238,7 @@
       "sameAs": [
         "https://www.wikidata.org/wiki/Q138416887",
         "https://hu.wikipedia.org/wiki/VIPACH",
-        "https://www.vipach.at/"
+        "https://vipach.at/"
       ],
       "parentOrganization": {
         "@id": "https://www.kozpontiszovetseg.at/#organization"
