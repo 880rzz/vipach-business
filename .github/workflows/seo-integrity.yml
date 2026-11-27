@@ -18,7 +18,7 @@ jobs:
         run: node .github/checks/check-seo-integrity.mjs
       - name: Validate multilingual Business entity, legal provider and public AI summaries
         run: node .github/checks/check-business-identity.mjs
-      - name: Verify Business analytics choice and withdrawal without network requests
+      - name: Verify tracking is disabled and legacy Business identifiers expire locally
         run: node .github/checks/check-analytics-withdrawal.mjs
       - name: Verify multilingual problem, solution, deliverables and project origin
         run: node .github/checks/check-business-proposition.mjs
