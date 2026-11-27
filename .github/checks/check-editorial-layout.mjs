@@ -29,6 +29,7 @@ for (const route of routes) {
     const links = html.match(/<span class="privacy-note-links">([\s\S]*?)<\/span>/)?.[1];
     assert.equal((links?.match(/<a\b/g)||[]).length,1,route+' one privacy destination in the form');
     assert.ok(links?.includes('href="/'+route.replace('index.html','')+'privacy/" rel="noopener" target="_blank"'),route+' localized, safely opened privacy notice');
+    assert.doesNotMatch(html,/GDPR-elfogadás|This privacy consent|Diese Datenschutz-Einwilligung/,route+' form treats the privacy notice as acknowledgement');
     assert.match(html,/name="privacy_version" type="hidden" value="2026-11-27-privacy-notice-(?:hu|en|de)"/,route+' log the current notice for future submissions');
   }
   if (/\/about\//.test('/'+route)) {
